@@ -15,6 +15,7 @@ $(document).ready(function(){
                 $(this).removeClass('hover');
             })
         }
+        //判断localstorage
     }
     new header()
 })

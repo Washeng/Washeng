@@ -107,6 +107,7 @@ $(document).ready(function(){
             $allbtn.on("click",function(){
                 $allbtn.toggleClass("col")
                 $allbtn.parents(".jies-produce").find(".produce-list:visible").find(".checked").toggleClass("col")
+                $('.zong-j .tkm').html($('.produce-list:visible .col').length/2)
                 //let btncolor=$(this).css("background");//rgb(255, 70, 78) none repeat scroll 0% 0% / auto padding-box border-box
                 // if($allbtn.hasClass("col")){
                 //     $allbtn.removeClass("col")
@@ -128,6 +129,8 @@ $(document).ready(function(){
             $('.jies-produce').on("click",".produce-list:visible .checked",function(){
                 $(this).toggleClass("col")
                 $(this).parents(".produce-list:visible").find(".checked").not($(this)).toggleClass("col")
+                $('.zong-j .tkm').html($('.produce-list:visible .col').length/2)
+                // console.log($('.produce-list:visible .col').length/2)
                 // let $tcolor=$(this).css("background");
                 //if($tcolor=="rgb(255, 70, 78) none repeat scroll 0% 0% / auto padding-box border-box"){
                 //     $(this).css({
@@ -312,6 +315,8 @@ $(document).ready(function(){
                 }
             });
             $('.zong-j .jUfYqO').html('￥'+allprice.toFixed(2));
+            console.log(1)
+            $('.jZoxra .zo-ji').html(allprice.toFixed(2)-11.99);
         }
     }
         
