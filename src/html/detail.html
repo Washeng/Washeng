@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/detail.css" />
+  </head>
+  <body>
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+    <!-- 头部引入 -->
+    <div class="detail-header"></div>
+    <script>
+      $(".detail-header").load("header.html");
+    </script>
+
+    <!-- main商品详情 -->
+    <div class="content">
+      <div class="detail-main">
+        <!-- 顶部 -->
+        <div class="place-show">
+          <div class="place-explain">
+            <a href="" class="tab-links">首页</a>
+            <em class="tab_arrow"></em>
+            <a href="" class="tab-links">母婴</a>
+            <em class="tab_arrow"></em>
+            <!-- 渲染商品标题 -->
+            <a class="tab-links goodtitle" href=""></a>
+          </div>
+        </div>
+        <!-- 商品样式选择 -->
+        <div class="goods-show">
+          <!-- 左边的图片盒子 -->
+          <div class="detailpic-box">
+            <!-- 左侧的切换商品图片 -->
+            <div class="left-pic">
+              <ul class="goods-li">
+              </ul>
+            </div>
+            <!-- 大图 -->
+            <div class="pic">
+              <img src="http://s2.juancdn.com/goods/190829/7/2/5d677b98b6f8ea2cec6e218e_800x800.jpg?iopcmd=thumbnail&type=8&width=400&height=400%7Ciopcmd=convert&Q=88&dst=jpg"/>
+              <div class="sf"></div>
+            </div>
+            <!-- 放大镜 -->
+            <div class="bf">
+              <img class="bpic" src="http://s2.juancdn.com/goods/190829/7/2/5d677b98b6f8ea2cec6e218e_800x800.jpg?iopcmd=thumbnail&type=8&width=400&height=400%7Ciopcmd=convert&Q=88&dst=jpg" alt="">
+            </div>
+            <!-- 100%人工质检 -->
+            <div class="sale-txt">
+              <span class="sale_text">
+                <span class="sale_ad_txt">100%人工质检</span>
+                <span class="sale_lowprice">全国包邮低价保障</span>
+                <span class="sale_reason">7天无理由退货</span>
+              </span>
+            </div>
+            <!-- 收藏举报 -->
+            <div class="sector-other">
+              <!-- 收藏 -->
+              <div class="collect">
+                <a href=""><i></i>收藏</a>
+              </div>
+              <!-- 分享 -->
+              <div class="share-box">
+                <a class="txt" href=""><i></i>分享</a>
+                <div class="share">
+                  <div class="bdshare-button">
+                    <a class="bds_qzone bds" href="#" title="分享到QQ空间"></a>
+                    <a class="bds_tsina bds" title="分享到新浪微博"></a>
+                    <a class="bds_tqq bds" title="分享到腾讯微博"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- 举报 -->
+              <div class="report">
+                <a href="">举报</a>
+              </div>
+            </div>
+          </div>
+          <!-- 中间商品的尺寸选择 -->
+          <div class="good-wrap">
+            <h2>蜜妃儿圆领卫衣女潮ins薄款宽松上衣2019秋装新款套头</h2>
+            <!-- 商品的详细描述 -->
+            <div class="sector-info">
+              <!-- 价格和配送 -->
+              <div class="basic">
+                <!-- 价格 -->
+                <div class="d-price">
+                  <!-- 倒计时 -->
+                  <div class="djs">
+                    剩余：<span
+                      ><em id="d">9</em>天<em id="h">12</em>时<em id="m">23</em
+                      >分<em id="s">16</em>秒</span
+                    >
+                  </div>
+                  <!-- 参考价 -->
+                  <dl class="tm-price">
+                    <dd class="global-price">
+                      <span class="current "
+                        ><i class="symbols">￥</i
+                        ><span class="js-cprice">45</span></span
+                      >
+                      <span class="old"
+                        >参考价:<em class="u-yen">¥</em
+                        ><span class="js-oprice">298</span></span
+                      >
+                    </dd>
+                  </dl>
+                  <!-- 促销 -->
+                  <dl class="activity-info">
+                    <dt>促销：</dt>
+                    <dd class="activity-dd">
+                      <div class="activity-c">
+                        <div class="activity-item">
+                          <div class="brand-tag-red">任选</div>
+                          <div class="info">
+                            79元2件任选<a class="detail" href=""
+                              >详情<span class="act_detail_icon"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <!-- 配送 -->
+                <dl class="good-send">
+                  <dt>配送：</dt>
+                  <dd>
+                    <div class="address">
+                      台州市 至
+                      <!-- 城市选择 -->
+                      <span class="address_selector"
+                        ><em class="js-address"></em><i></i
+                      ></span>
+                      <div class="city">
+                        <ul>
+                          <li>
+                            <a href="">北京市</a>
+                          </li>
+                          <li>
+                            <a href="">天津市</a>
+                          </li>
+                          <li>
+                            <a href="">上海市</a>
+                          </li>
+                          <li>
+                            <a href="">重庆市</a>
+                          </li>
+                          <li>
+                            <a href="">河北省</a>
+                          </li>
+                          <li>
+                            <a href="">山西省</a>
+                          </li>
+                          <li>
+                            <a href="">内蒙古自治区</a>
+                          </li>
+                          <li>
+                            <a href="">辽宁省</a>
+                          </li>
+                          <li>
+                            <a href="">吉林省</a>
+                          </li>
+                          <li>
+                            <a href="">黑龙江省</a>
+                          </li>
+                          <li>
+                            <a href="">江苏省</a>
+                          </li>
+                          <li>
+                            <a href="">浙江省</a>
+                          </li>
+                          <li>
+                            <a href="">安徽省</a>
+                          </li>
+                          <li>
+                            <a href="">福建省</a>
+                          </li>
+                          <li>
+                            <a href="">江西省</a>
+                          </li>
+                          <li>
+                            <a href="">河南省</a>
+                          </li>
+                          <li>
+                            <a href="">山东省</a>
+                          </li>
+                          <li>
+                            <a href="">湖北省</a>
+                          </li>
+                          <li>
+                            <a href="">湖南省</a>
+                          </li>
+                          <li>
+                            <a href="">广东省</a>
+                          </li>
+                          <li>
+                            <a href="">广西壮族自治区</a>
+                          </li>
+                          <li>
+                            <a href="">海南省</a>
+                          </li>
+                          <li>
+                            <a href="">四川省</a>
+                          </li>
+                          <li>
+                            <a href="">贵州省</a>
+                          </li>
+                          <li>
+                            <a href="">云南省</a>
+                          </li>
+                          <li>
+                            <a href="">西藏自治区</a>
+                          </li>
+                          <li>
+                            <a href="">陕西省</a>
+                          </li>
+                          <li>
+                            <a href="">甘肃省</a>
+                          </li>
+                          <li>
+                            <a href="">青海省</a>
+                          </li>
+                          <li>
+                            <a href="">宁夏回族自治区</a>
+                          </li>
+                          <li>
+                            <a href="">新疆维吾尔自治区</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="by"
+                      data-post="0"
+                      style="display: inline-block;"
+                    >
+                      包邮,
+                    </div>
+                    <span class="sale_ad_txt sale_ad_info_time"
+                      >24小时发货</span
+                    >
+                  </dd>
+                </dl>
+              </div>
+              <!-- 颜色和尺码 -->
+              <div class="other">
+                <!-- 颜色选择 -->
+                <dl class="color">
+                  <dt>颜色：</dt>
+                  <dd class="color_wrapper">
+                    <ul>
+                      <li class="attr_pic">
+                        <a title="米色"
+                          ><img
+                            src="https://goods3.juancdn.com/goods/190824/5/3/5d6109b633b089082a119c09_800x800.jpg?iopcmd=thumbnail&amp;type=11&amp;height=34&amp;width=34%7Ciopcmd=convert&amp;Q=88&amp;dst=jpg"
+                            height="22px"
+                            width="22px"
+                          />
+                          <span class="sku_attr_title">米色</span></a
+                        >
+                      </li>
+                      <li class="attr_pic">
+                        <a title="粉色"
+                          ><img
+                            src="https://goods8.juancdn.com/goods/190824/f/2/5d6109c133b08939a40f20be_800x800.jpg?imageMogr2/thumbnail/34x34!/quality/88!/format/jpg"
+                            height="22px"
+                            width="22px"
+                          /><span class="sku_attr_title">粉色</span></a
+                        >
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <!-- 尺寸选择 -->
+                <dl class="size">
+                  <dt>尺码：</dt>
+                  <dd class="size_wrapper">
+                    <ul>
+                      <li class="nos">
+                        <a href=""><span class="c">27码内长16.5cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">28码内长17cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">27码内长16.5cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">28码内长17cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">27码内长16.5cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">28码内长17cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">27码内长16.5cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">28码内长17cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">27码内长16.5cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">28码内长17cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">27码内长16.5cm</span></a>
+                      </li>
+                      <li class="nos">
+                        <a href=""><span class="c">28码内长17cm</span></a>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+              <!-- 数量的加减 -->
+              <dl class="number">
+                <dt>数量：</dt>
+                <dd>
+                  <p>
+                    <input type="button" class="decrease" value="-"></i>
+                    <input type="text" class="c-num"value="1" />
+                    <input type="button" class="increase" value="+"></i>
+                  </p>
+                </dd>
+              </dl>
+              <!-- 立即购买 加入购物车 -->
+              <div class="submit-go">
+                <a class="buy-btn" href="">立即购买</a>
+                <a class="btn">加入购物车</a>
+              </div>
+            </div>
+          </div>
+          <!-- 右边商家的信息 -->
+          <div class="deal-store">
+            <!-- 商家的店名 -->
+            <div class="store_wrapper">
+              <div class="store_img">
+                <img
+                  src="https://goods1.juancdn.com/bao/170809/1/2/598a7acca9fcf8ad3c616de2_180x90.png?iopcmd=thumbnail&amp;type=11&amp;height=58&amp;width=58%7Ciopcmd=convert&amp;Q=88&amp;dst=png"
+                />
+              </div>
+              <div class="store_name">
+                <a href="" class="sale_name">萌萌鹿童鞋旗舰店</a>
+              </div>
+              <div class="buy_nums">15.1万人已购</div>
+            </div>
+            <!-- 商家的描述金牌认证 -->
+            <div class="store_desc">
+              <div class="sale_pd sale-line">
+                <img
+                  src="//jp.juancdn.com/juanpi/images/shopping/gold.png"
+                />金牌认证
+              </div>
+              <div class="sale_ps sale-line">
+                <img
+                  src="//jp.juancdn.com/juanpi/images/shopping/bail.png"
+                />已缴纳保证金
+              </div>
+              <div class="sale_license sale-line">
+                <img
+                  src="//jp.juancdn.com/juanpi/images/shopping/license.png"
+                />
+                <a href="">营业执照</a>
+              </div>
+            </div>
+            <!-- 联系客服 -->
+            <div class="to_im sale-line">
+              <img
+                src="//jp.juancdn.com/juanpi/images/shopping/connect.png"
+              /><a href="">联系客服</a>
+            </div>
+          </div>
+        </div>
+        <!-- 商品的详细介绍 -->
+        <div class="goods-detail">
+          <!-- 商品详情规则导航 -->
+          <div class="title-nav">
+            <div class="slide-box">
+              <div class="slide-box-main">
+                <!-- 前半部分商品详情四个分类 -->
+                <div class="f1">
+                  <ul>
+                    <li class="active"><a href="">商品详情</a></li>
+                    <li><a href="javascript:;">商品规格</a></li>
+                    <li><a href="javascript:;">物流与售后</a></li>
+                    <li><a href="javascript:;">消费保障</a></li>
+                  </ul>
+                </div>
+                <!-- 手机购买和二维码 -->
+                <div class="code-item">
+                  <a class="show-qcode" href=""
+                    >手机购买<i class="code_img"></i
+                  ></a>
+                  <!-- 二级二维码 -->
+                  <div class="codetip-box">
+                    <div class="code-box">
+                      <p class="code"></p>
+                      <p class="txt">随时逛 及时抢</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 滚轮滑动到详情时的固定导航 -->
+            <div class="fixed-detailnav">
+              <div class="slide-box-main">
+                <!-- 前半部分商品详情四个分类 -->
+                <div class="f1">
+                  <ul>
+                    <li class="active"><a href="">商品详情</a></li>
+                    <li><a href="">商品规格</a></li>
+                    <li><a href="">物流与售后</a></li>
+                    <li><a href="">消费保障</a></li>
+                  </ul>
+                </div>
+                <!-- 加入购物车 -->
+                <div class="f2 ">
+                  <a class="btn add-cart-btn ">加入购物车</a>
+                  <span class="p"><i class="symbols">￥</i>98</span>
+                </div>
+                <!-- 手机购买和二维码 -->
+                <div class="code-item">
+                  <a class="show-qcode" href=""
+                    >手机购买<i class="code_img"></i
+                  ></a>
+                  <!-- 二级二维码 -->
+                  <div class="codetip-box">
+                    <div class="code-box">
+                      <p class="code"></p>
+                      <p class="txt">随时逛 及时抢</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 描述商品的具体图片 -->
+          <div class="pic-goodinfo">
+            <!-- 整体款式部分 -->
+            <div class="zheng-info tab-show-section">
+              <!-- 整体款式标题 -->
+              <div class="info-title">
+                <span class="single-style">整体款式</span>
+              </div>
+              <!-- 整体款式图片 -->
+              <div class="details-info">
+                <div class="goods_desc">
+                  <img
+                    class="goods_desc_img lazy"
+                    src="https://goods8.juancdn.com/goods/190829/f/a/5d677baeb6f8ea2a374c188d_790x1060.jpg?imageMogr2/quality/88!/format/jpg"
+                  />
+                  <img
+                    class="goods_desc_img lazy"
+                    src="https://goods2.juancdn.com/goods/190829/2/0/5d677bb1b6f8ea285547e8da_790x675.jpg?imageMogr2/quality/88!/format/jpg"
+                  />
+                  <img
+                    class="goods_desc_img lazy"
+                    src="https://goods1.juancdn.com/goods/190829/0/c/5d677bb233b0897fee6cf9e2_790x1554.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"
+                  />
+                  <img
+                    class="goods_desc_img lazy"
+                    src="https://goods5.juancdn.com/goods/190829/8/f/5d677bb333b08975236be3e3_790x1290.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 商品的参数规格 -->
+            <div class="tab-show-section">
+              <!-- 商品的参数规格标题 -->
+              <div class="info-title">
+                <span class="param">参数规格</span>
+              </div>
+              <!-- 商品参数表格 -->
+              <div class="details-info">
+                <table cellpadding="0" cellspacing="0" class="tb-param">
+                  <tbody>
+                    <tr>
+                      <td width="33%">版型：宽松</td>
+                      <td width="33%">潮流：韩系</td>
+                      <td width="33%">款式风格：通勤（OL）</td>
+                    </tr>
+                    <tr>
+                      <td width="33%">上市季节：秋季</td>
+                      <td width="33%">上市年份：2019年</td>
+                      <td width="33%">适用年龄：18-24周岁</td>
+                    </tr>
+                    <tr>
+                      <td width="33%">成分含量：81%(含)-90%(含)</td>
+                      <td width="33%">尺码：S,M,L</td>
+                      <td width="33%">衣门襟：套头</td>
+                    </tr>
+                    <tr>
+                      <td width="33%">袖型：常规</td>
+                      <td width="33%">领子：圆领</td>
+                      <td width="33%">袖长：长袖</td>
+                    </tr>
+                    <tr>
+                      <td width="33%">衣长：常规</td>
+                      <td width="33%">厚薄：常规</td>
+                      <td width="33%">主材质：棉</td>
+                    </tr>
+                    <tr>
+                      <td width="33%">货号：G9071511</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- 物流与售后 -->
+            <div id="shouhou" class="tab-show-section">
+              <!-- 物流与售后标题 -->
+              <div class="info-title">
+                <span class="buy-lines">物流与售后</span>
+              </div>
+              <!-- 物流与售后详细 -->
+              <div class="guide-con">
+                <p>
+                  <b>商家提醒：</b
+                  >此商品由品牌商从<b>【广东广州】</b>通过<b>【圆通速递】、【韵达快递】</b>发货
+                </p>
+                <p>
+                  <b>24小时发货：</b
+                  >买家付款成功后，商家将在24小时内完成发货。（节假日等特殊情况除外）
+                </p>
+                <p>
+                  <b>包裹跟踪：</b>您可在<a href="">【我的订单】</a
+                  >中查询物流跟踪信息。
+                </p>
+                <p>
+                  <b>确认收货：</b
+                  >当快件送达至您的收货地址后，卷皮将为您自动确认收货并将奖励积分发放至您的账户。
+                </p>
+                <div class="return-process"></div>
+                <p>
+                  <b>售后服务承诺</b><br />收到货后，如果因为主观原因不喜欢/不想要了，在不影响二次销售的情况下，签收后7天内，卷皮网为您提供七天无理由退货服务。如果未收到货或收到商品有质量问题，您可以在签收后15天内申请售后。
+                  <a href="">售后服务说明&gt;&gt;</a>
+                </p>
+                <p class="mt10">
+                  <b>运费补贴政策</b><br />
+                  <span class="oldrule">商品存在问题时，请及时申请售后，卷皮将提供至少10元的退货运费补贴。如遇到少件、错发、空包裹等情况，还额外提供至少10元的补偿。</span>
+                  <a href="">退货运费补贴说明&gt;&gt;</a>
+                </p>
+                <p class="mt10">
+                  <b>价格说明</b><br />
+                  <span>关于卷皮商品价格的说明</span>
+                  <a href="" class="js_price_desc">查看详情&gt;&gt;</a>
+                </p>
+              </div>
+            </div>
+            <!-- 消费保障 -->
+            <div id="baozhang" class="tab-show-section">
+              <!-- 消费保障标题 -->
+              <div class="info-title">
+                <span class="consumer-protection">消费保障</span>
+              </div>
+              <!-- 消费保障详细 -->
+              <div class="details-info">
+                <div class="cp01 ">
+                  <ul>
+                    <li class="active"><span class="cpc01"></span></li>
+                    <li class=""><span class="cpc02"></span></li>
+                    <li class=""><span class="cpc03"></span></li>
+                    <li class=""><span class="cpc04"></span></li>
+                    <li class=""><span class="cpc05"></span></li>
+                    <li class=""><span class="cpc06"></span></li>
+                    <li class=""><span class="cpc07"></span></li>
+                  </ul>
+                </div>
+                <div class="cp02">
+                    <div class="cp-con"><div class="con1"></div></div>
+                    <div class="cp-con"  style='display:none'><div class="con2"></div></div>
+                    <div class="cp-con"  style='display:none'> <div class="con3"></div></div>
+                    <div class="cp-con"  style='display:none'> <div class="con4"></div></div>
+                    <div class="cp-con"  style='display:none'> <div class="con5 "></div></div>
+                    <div class="cp-con"  style='display:none'><div class="con6"></div></div>
+                    <div class="cp-con"  style='display:none'><div class="con7"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 侧边的专场其他商品 -->
+          <div class="other-goods">
+            <div id="other-goodslist">
+              <div class="title-other">专场其他商品</div>
+              <a class="other-goods-item" href="">
+                <img src="https://goods7.juancdn.com/goods/190830/c/6/5d68d46833b0891e3c700ed4_800x800.jpg?iopcmd=thumbnail&amp;type=11&amp;height=50&amp;width=50%7Ciopcmd=convert&amp;Q=88&amp;dst=jpg"class="goods_img"/>
+                <div class="other-goods-desc">
+                  <div class="other-goods-name">蜜妃儿连帽卫衣女韩版</div>
+                  <div class="other-goods-wrapper">
+                    <span class="other-new-cprice">¥109</span>
+                    <span class="other-new-oprice">¥217</span>
+                  </div>
+                </div>
+              </a>
+              <a class="other-goods-item" href="">
+                <img src="https://goods1.juancdn.com/goods/190805/1/7/5d478e5633b0894d184bca5e_800x800.jpg?iopcmd=thumbnail&amp;type=11&amp;height=50&amp;width=50%7Ciopcmd=convert&amp;Q=88&amp;dst=jpg" class="goods_img"/>
+                <div class="other-goods-desc">
+                  <div class="other-goods-name">蜜妃儿白色卫衣2019潮</div>
+                  <div class="other-goods-wrapper">
+                    <span class="other-new-cprice">¥79</span>
+                    <span class="other-new-oprice">¥157</span>
+                  </div>
+                </div>
+              </a>
+              <a class="other-goods-item" href="">
+                <img src="https://goods7.juancdn.com/goods/190829/c/7/5d6737b033b089195031cbb7_800x800.jpg?iopcmd=thumbnail&amp;type=11&amp;height=50&amp;width=50%7Ciopcmd=convert&amp;Q=88&amp;dst=jpg"class="goods_img"/>
+                <div class="other-goods-desc">
+                  <div class="other-goods-name">蜜妃儿卫衣女春秋薄款</div>
+                  <div class="other-goods-wrapper">
+                    <span class="other-new-cprice">¥89</span>
+                    <span class="other-new-oprice">¥177</span>
+                  </div>
+                </div>
+              </a>
+              <a class="other-goods-item" href="">
+                <img src="https://goods5.juancdn.com/goods/190829/8/b/5d67395b33b089774658ffb5_800x800.jpg?iopcmd=thumbnail&amp;type=11&amp;height=50&amp;width=50%7Ciopcmd=convert&amp;Q=88&amp;dst=jpg"class="goods_img"/>
+                <div class="other-goods-desc">
+                  <div class="other-goods-name">蜜妃儿短款卫衣女春秋</div>
+                  <div class="other-goods-wrapper">
+                    <span class="other-new-cprice">¥89</span>
+                    <span class="other-new-oprice">¥177</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div id="recommond-goods-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部引入 -->
+    <div class="detail-foot"></div>
+    <script>
+      $(".detail-foot").load("foot.html");
+    </script>
+    <script src="../js/detail.js"></script>
+  </body>
+</html>

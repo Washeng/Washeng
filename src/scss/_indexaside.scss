@@ -1,0 +1,315 @@
+.aside{
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 36px;
+    z-index: 10000;
+    background-color: #444;
+    color: #fff;
+}
+/*!侧边栏上半部分*/
+.aside .aside-top{
+    position: absolute;
+}
+/*！用户图标部分*/
+.aside-top .aside-user{
+    margin-top: 0;
+    .links-user{
+        width: 36px;
+        padding: 9px 0;
+        display: block;
+        cursor: pointer;
+    }
+    .links-user:hover{
+        background:#ff464e;
+        .icon-user{
+            background-position: -26px 0;
+        }
+    }
+}
+/*!二级登录框*/
+.aside-user .tab-user{
+    background: #fff;
+    width: 220px;
+    height: 106px;
+    padding: 20px 0;
+    z-index: 10;
+    .head{
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 10px;
+            .pic{
+                border: #eee solid 2px;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                margin: 0 auto 10px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+        }
+        .txt{
+            color: #333;
+            background: #fff3f5;
+            border-top: #ffd8d8 solid 1px;
+            border-bottom: #ffd8d8 solid 1px;
+            height: 30px;
+            line-height: 30px;
+        }
+    .icon-use{
+        color: #fff;
+    }
+}
+/*!购物袋*/
+.aside-cart{
+    border-top: #222 solid 1px;
+    border-bottom: #222 solid 1px;
+    margin-top: 15px;
+    position: relative;
+    .links-cart{
+        border-top: #555 solid 1px;
+        border-bottom: #555 solid 1px;
+        width: 36px;
+        padding: 9px 0;
+        display: block;
+        cursor: pointer;
+    }
+    .links-cart:hover{
+        background: #ff464e;
+        .i-cart{
+            background-position: -25px -24px;
+        }
+        .cartnum{
+            background: #fff;
+            color: #ff464e;
+        }
+        
+    }
+    .i-cart{
+        height: 77px;
+        width: 18px;
+        background-position: 1px -24px;
+        margin: 0 0 0 9px;
+    }
+    .cartnum{
+        background: #ff464e;
+        border-radius: 15px;
+        color: #fff;
+        display: block;
+        font-family: "宋体";
+        height: 18px;
+        line-height: 18px;
+        width: 18px;
+        text-align: center;
+        margin: 5px 0 0 9px;
+    }
+}
+/*!爱心我的收藏*/
+.aside-love{
+    margin-top: 15px;
+    position: relative;
+    .links-love{
+        width: 36px;
+        padding: 9px 0;
+        display: block;
+        cursor: pointer;
+    }
+    .links-love:hover{
+        background: #ff464e;
+        .i-love{
+            background-position: -26px -110px
+        }
+    }
+    .i-love{
+        width: 18px;
+        height: 18px;
+        background-position: 0 -110px;
+        margin: 0 0 0 9px;
+    }
+}
+/*!我的收藏卷*/
+.aside-quan{
+    margin-top: 15px;
+    position: relative;
+    .links-quan{
+        width: 36px;
+        padding: 9px 0;
+        display: block;
+        cursor: pointer;
+        .i-quan{
+            width: 18px;
+            height: 18px;
+            background-position: 0 -134px;
+            margin: 0 0 0 9px;
+        }
+    }
+    .links-quan:hover{
+        background: #ff464e;
+        .i-quan{
+            background-position: -26px -134px
+        }
+    }
+}
+/*!公用的删除X*/
+.close{
+    color: #ccc;
+    display: block;
+    width: 10px;
+    height: 10px;
+    font-size: 16px;
+    line-height: 10px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+}
+/*!公用的◆符号*/
+.arr-icon{
+    color: #444;
+    font-family: "宋体";
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    right: -6px;
+    text-align: center;
+    top: 14px;
+    width: 16px;
+}
+/*!公用的图标的路径和位置*/
+.icon-user{
+    display: block;
+    background: url(http://jp.juancdn.com/juanpi/images/global/sidebar.png) no-repeat;
+    background-position: 0 0;
+    width: 18px;
+    height: 18px;
+    margin-left: 9px;
+}
+/*!公用的二级结构*/
+.tab-tips{
+    background-color: #444;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: none;
+    height: 36px;
+    line-height: 36px;
+    // opacity: 0;
+    position: absolute;
+    right: 62px;
+    text-align: center;
+    top: 0;
+    width: 90px;
+    border-radius: 2px;
+}
+
+/*！侧边栏下半部分*/
+.aside-bot{
+    position: absolute;
+    bottom: 0;
+    top: auto;
+}
+/*!意见反馈*/
+.aside-complain{
+    margin-top: 15px;
+    position: relative;
+    .links-complain{
+        width: 36px;
+        padding: 9px 0;
+        display: block;
+        cursor: pointer;
+        .i-complain{
+            width: 18px;
+            height: 18px;
+            background-position: 0 -208px;
+            margin: 0 0 0 9px;
+        }
+    }
+    .links-complain:hover{
+        background: #ff464e;
+        .i-complain{
+            background-position: -26px -208px
+        }
+    }
+}
+/*!二维码*/
+.aside-code{
+    margin-top: 15px;
+    position: relative;
+    .links-code{
+        width: 36px;
+        padding: 9px 0;
+        display: block;
+        cursor: pointer;
+        .i-code{
+            width: 18px;
+            height: 18px;
+            background-position: 0 -160px;
+            margin: 0 0 0 9px;
+        }
+    }
+    .tab-tips{
+        top: auto;
+        bottom: -46px;
+        background-color: #fff;
+        border: #e2e2e2 solid 1px;
+        padding: 5px;
+        width: 148px;
+        height: 173px;
+        .code-box{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 148px;
+            z-index: 5;
+        }
+        .code{
+            background: url(http://jp.juancdn.com/juanpi/images/global/jp-app-90-new.png?20160119) no-repeat;
+            height: 148px;
+            width: 148px;
+        }
+        .txt{
+            color: #666;
+            line-height: 23px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .arr-icon{
+            color: #fff;
+            top: 111px;
+        }
+    }
+    .links-code:hover{
+        background: #ff464e;
+        .i-code{
+            background-position: -26px -160px
+        }
+    }
+}
+/*!回到顶部*/
+.aside-backtop{
+    height: 36px;
+    margin-top: 15px;
+    position: relative;
+    .links-backtop{
+        width: 36px;
+        padding: 9px 0;
+        display: block;
+        cursor: pointer;
+        .i-backtop{
+            display: block;
+            width: 18px;
+            height: 18px;
+            background-position: 0 -187px;
+            margin: 0 0 0 9px;
+        }
+    }
+    .links-backtop:hover{
+        background: #ff464e;
+        .i-backtop{
+            background-position: -26px -187px
+        }
+    }
+}

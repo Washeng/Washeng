@@ -1,0 +1,155 @@
+
+/*!顶部中部的logo*/
+.header-middle{
+    width: 100%;
+    background: #fff;
+}
+.wrapper{
+    width: 1200px;
+    height: 85px;
+    margin: 0 auto;
+}
+.header-middle .header-midtop{
+    height: 85px;
+    position: relative;
+}
+.header-midtop .logo a{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 210px;
+    height: 52px;
+    background: url(http://jp.juancdn.com/juanpi/images/total/header-total.gif?20160112) no-repeat;
+    background-position: -78px -52px;
+}
+.header-midtop .protection{
+    background: url(http://jp.juancdn.com/juanpi/images/total/header-total.gif?20160112) no-repeat;
+    position: absolute;
+    right: 290px;
+    background-position: 0 0;
+    height: 33px;
+    width: 465px;
+    top: 28px;
+}
+.header-midtop .protection a{
+    display: block;
+    float: left;
+    height: 33px;
+    width: 110px;
+    margin: 0 0px 0 34px;
+}
+.header-midtop .search{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 237px;
+    height: 35px;
+}
+.header-middle .search .search-area{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 35px;
+    background: #efefef;
+}
+.header-midtop .search #search-input{
+    border: 0 none;
+    outline: 0 none;
+    background: #efefef;
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 0 0 10px;
+    color: #d4d4d4;
+}
+.header-midtop .search #search-pic{
+    float: right;
+    display: block;
+    background: url(http://jp.juancdn.com/juanpi/images/total/header-total.gif?20160112) no-repeat;
+    background-position: right -65px;
+    border: 0 none;
+    cursor: pointer;
+    height: 35px;
+    width: 37px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+/*!顶部中部的nav*/
+.header-midnav{
+    width: 100%;
+    height: 38px;
+    border-bottom: 2px solid #ff464e;
+}
+.header-midnav .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    height: 38px;
+}
+.header-midnav .wrapper .ul-nav{
+    float: left;
+}
+.header-midnav .ul-nav li.active{
+    background: #ff464e;
+    border-radius: 6px 6px 0 0;
+}
+.header-midnav .ul-nav li.active a{
+    color: #fff;
+}
+.header-midnav .ul-nav li{
+    float: left;
+    display: inline;
+    height:38px;
+    position: relative;
+    z-index: 11;
+}
+.header-midnav .ul-nav li a{
+    float: left;
+    cursor: pointer;
+    padding: 10px 24px 0;
+    color: #333;
+    font-size: 14px;
+    height: 30px;
+}
+.header-midnav .ul-nav .nav-btn:hover a{
+    color: #ff464e;
+}
+.header-midnav .ul-nav li:nth-child(5) em{
+    width: 12px;
+    float: left;
+    vertical-align: baseline;
+    background: url(http://jp.juancdn.com/juanpi/images/global/phone-new-20151119.png?20160112) no-repeat;
+    height: 16px;
+    margin-top: 3px;
+}
+//二维码的二级导航
+#erweima{
+    display: none;
+    position: absolute;
+    left: -28px;
+    top: 40px;
+    background-color: #fff;
+    border: #e2e2e2 solid 1px;
+    padding: 5px;
+    width: 148px;
+    height: 173px;
+    z-index: 100;
+}
+#erweima .code{
+    background: url(http://jp.juancdn.com/juanpi/images/global/jp-app-90-new.png?20160119) no-repeat;
+    height: 148px;
+    width: 148px;
+}
+#erweima .txt{
+    text-align: center;
+    font-size: 14px;
+}
+.header-midnav .ul-nav li:nth-child(5):hover #erweima{
+    display: block;
+}
+
+
+
+

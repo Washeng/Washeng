@@ -1,0 +1,179 @@
+.footer{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 40px;
+    background: #f9f9f9;
+    z-index: 100;
+    clear: both;
+}
+.footer .bg{
+    border-top: #ff464e solid 4px;
+}
+.footer .bg .foot-content{
+    width: 1100px;
+    padding: 0 50px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+/*!foot的顶部二维码和服务*/ 
+.foot-content .fot-top{
+    padding-top: 25px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*!随时购二维码*/
+.fot-top .fot-erweima{
+    width: 90px;
+    float: left;
+    .app-show{
+        background: url(http://jp.juancdn.com/juanpi/images/global/jp-app-90.png?v=20160113) no-repeat;
+        height: 90px;
+        width: 90px;
+        margin-top: 5px;
+    }
+    .app-txt{
+        text-align: center;
+        font-size: 14px;
+        margin: 10px 0;
+    }
+}
+/*!服务*/
+.fot-top .fot-serve{
+    padding-left: 65px;
+    width: auto;
+    overflow: hidden;
+    float: left;
+    dl{
+        width: 200px;
+        float: left;
+        dt{
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-left: 7px;
+        }
+        dd{
+            margin-bottom: 5px;
+            color: #666;
+            a{
+                color: #666;
+                cursor: pointer;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            i{
+                width: 4px;
+                height: 4px;
+                overflow: hidden;
+                border-radius: 50%;
+                background: #c6c6c6;
+                display: inline-block;
+                margin-right: 5px;
+                margin-top: 8px;
+            }
+        }
+    }
+    dl.help{
+        width: 100px;
+    }
+}
+/*!联系电话*/
+.fot-call{
+    margin-top: 35px;
+    float: right;
+    a{
+        display: block;
+        width: 86px;
+        height: 35px;
+        background: url(http://jp.juancdn.com/juanpi/images/global/service_add.gif?20160113) no-repeat;
+        background-position: 0 -5px;
+        float: left;
+    }
+    .service-time{
+        float: left;
+        padding-left: 10px;
+        width: 65px;
+        p{
+            color: #919191;
+            line-height: 18px;
+        }
+    }
+    .call-phone{
+        margin-top: 55px;
+    }
+}
+
+/*!友情链接*/
+.links{
+    height: 20px;
+    padding: 10px 0px;
+    border-bottom: 1px dotted #ccc;
+    color: #999999;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    span{
+        display: block;
+        overflow: hidden;
+        float: left;
+    }
+    .links-listbox{
+        width: 970px;
+        float: left;
+        height: 20px;
+        position: relative;
+        overflow: hidden;
+        .links-list{
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+        li{
+            height: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 5px;
+            a{
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/*!公司许可证*/
+.fot-bot{
+    text-align: center;
+    padding-top: 20px;
+    color: #c6c6c6;
+    a{
+        cursor: pointer;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .fot-scces{
+        padding-top: 2px;
+        text-align: center;
+        color: #c6c6c6;
+    }
+}
+/*!bot-logo*/
+.fot-logo{
+    color: #999999;
+    text-align: center;
+    padding-top: 10px;
+    a{
+        cursor: pointer;
+        img{
+            margin-right: 27px;
+        }
+    }
+}

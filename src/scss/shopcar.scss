@@ -1,0 +1,449 @@
+/*!header顶部*/
+.header-top{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    background: #f6f6f6;
+    .htop-left{
+        height: 30px;
+        width: 50%;
+        float: left;
+    }
+    .htop-right{
+        float: right;
+        padding: 0 50px 0 0;
+        text-align: right;
+        box-sizing: border-box;
+        height: 30px;
+        width: 50%;
+    }
+}
+/*!header-top右侧*/
+.htop-right{
+    overflow: hidden;
+    a{
+        color: #333333;
+        background-color: transparent;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 0 0 15px;
+    }
+    a:hover{
+        color: #ff464e;
+    }
+} 
+/*!heder的logo部分*/
+.header-logo{
+    width: 100%;
+    background: #ffffff;
+    border-bottom: #fc2c3e 2px solid;
+    .logo-pic{
+        width: 1200px;
+        margin: 0 auto 0 auto;
+        overflow: hidden;
+    }
+    a{
+        float: left;
+        height: 45px;
+        width: 200px;
+        padding: 20px 0 20px 0;
+        background: url(http://jp.juancdn.com/juanpi/images/mac2x/juan-logo.png?20160116) no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+}
+/*!main部分的导航*/
+.main{
+    background: #f6f6f6;
+}
+.container{
+    height: auto;
+    width: 1200px;
+    margin: 0 auto;
+}
+.jies-good{
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    color: #a3a3a3;
+    .fw{
+        float: left;
+        width: 230px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .fw1{
+        width: 170px;
+    }
+    .fw2{
+        width: 215px;
+    }
+    .fw3{
+        width: 155px;
+    }
+    .fw-xinxi{
+        text-align: left;
+        padding: 0 0 0 33px;
+        margin: 0 0 0 163px;
+    }
+}
+.jies-good::after{
+    display: block;
+    content: '';
+    overflow: hidden;
+    clear: both;
+}
+
+/*!没有商品时的显示*/
+.jies-produce .none{
+    position: relative;
+    padding: 0 0 20px 0;
+    .n-box{
+        height: 500px;
+        width: 100%;
+        background: url(http://jp.juancdn.com/jpwebapp_v1/images_v1/shopping/empty-cart.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        box-sizing: border-box;
+        padding: 400px 0 0 0;
+        text-align: center;
+        div{
+            color: #333333;
+            font-size: 16px;
+            text-align: center;
+        }
+        .no-word{
+            display: inline-block;
+            width: 80px;
+            padding: 5px;
+            border-radius: 3px;
+            border: #ff464e 1px solid;
+            color: #ff464e;
+            margin: 10px;
+            font-size: 15px;
+            transition: all 0.1s linear;
+        }
+    }
+}
+/*!商品购物车列表*/ 
+.jies-produce{
+    height: auto;
+    width: 1200px;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: #f1f1f1 0 0 1px;
+}
+/*!上方的商品列表*/
+.produce-list{
+    position: relative;
+    padding: 0 0 20px 0;
+    display: none;
+}
+.col{
+    background: rgb(255, 70, 78);
+    border-color: rgb(255, 70, 78);
+}
+/*!跨店促销行*/
+.cuxiao{
+    height: 52px;
+    width: 1160px;
+    line-height: 52px;
+    padding: 0 5px 0 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /*勾选按钮*/
+    .gou{
+        float: left;
+        height: 99%;
+        width: 40px;
+        text-align: center;
+        .checked{
+            position: relative;
+            top: -1px;
+            vertical-align: middle;
+            display: inline-block;
+            border-radius: 15px;
+            cursor: pointer;
+            border: #9B9B9B 1px solid;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            transition: background 0.2s linear;
+        }
+        .gx1::after{
+            transform: rotate(45deg) scale(1);
+        }
+    }
+    /*跨店促销文字*/
+    .hEoyiQ{
+        padding: 0 10px 0 0px;
+        display: inline;
+        .jklnfm{
+            position: relative;
+            top: -1px;
+            padding: 0 5px 0 0;
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .manjian{
+        color: #ff464e;
+        padding: 0 4px 0 4px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .manjian:hover{
+        text-decoration: underline
+    }
+}
+/*!勾选图标*/
+.checked::after{
+    content: ' ';
+    position: absolute;
+    display: table;
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    width: 3px;
+    height: 7px;
+    left: 5px;
+    top: 2px;
+    transition: all 0.3s cubic-bezier(0.12,0.4,0.29,1.46);
+}
+/*!商品的购买详细*/
+.buy-good .b-produce{
+    border-top: #efefef 1px solid;
+    transition: background 0.2s linear;
+    background: #fafafa;
+    margin: 0 auto;
+    position: relative;
+    height: 126px;
+    width: 1158px;
+    border: #efefef 1px solid;
+    .gouxuan{
+        padding: 55px 0;
+        box-sizing: border-box;
+        float: left;
+        height: 99%;
+        width: 40px;
+        text-align: center;
+    }
+    .gx2{
+        position: relative;
+        top: -1px;
+        vertical-align: middle;
+        display: inline-block;
+        border-radius: 15px;
+        cursor: pointer;
+        border: #9B9B9B 1px solid;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        transition: background 0.2s linear;
+    }
+    .gx2::after{
+        transform: rotate(45deg) scale(1);
+    }
+    .pi-p img{
+        float: left;
+        height: 100px;
+        width: 100px;
+        margin: 13px 0 13px 0;
+    }
+    /*!选择的规则*/
+    .xq-pro{
+        padding: 0 13px 0 13px;
+        line-height: 18px;
+        float: left;
+        margin: 13px 0 13px 0;
+        height: 100px;
+        width: 230px;
+        box-sizing: border-box;
+        margin-left: 6px;
+        .bt{
+            color: #666666;
+            font-weight: 400;
+            min-height: 40px;
+            display: block;
+            padding: 0 0 10px 0;
+        }
+        .wen{
+            color: #999999;
+        }
+    }
+    /*!单价*/
+    .jiage{
+        text-align: center;
+        font-size: 14px;
+        line-height: 100px;
+        float: left;
+        margin: 13px 0 13px 0;
+        height: 100px;
+        width: 230px;
+        box-sizing: border-box;
+        .danjia{
+            color: #cccccc;
+            padding: 0 0 0 5px;
+            font-size: 12px;
+            font-style: normal;
+        }
+    }
+    /*!数量加减*/
+    .num-change{
+        height: 22px;
+        width: auto;
+        border: #e1e1e1 1px solid;
+        margin: 52px 43px 0 43px;
+        box-sizing: border-box;
+        float: left;
+        .i-low{
+            border: 0;
+            height: 20px;
+            width: 20px;
+            line-height: 18px;
+            display: inline-block;
+            text-align: center;
+            font-weight: 700;
+            color: #cccccc;
+            background: #ffffff;
+            font-size: 14px;
+            cursor: not-allowed;
+            border-right: #e1e1e1 1px solid;
+            transition: color 0.2s linear;
+        }
+        .i-num{
+            width: 20px;
+            color: #999999;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            // padding: 0 10px 0 10px;
+            height: 19px;
+            display: inline-block;
+            text-align: center;
+            background: #ffffff;
+            transition: color 0.2s linear;
+            cursor: pointer;
+            border: 0;
+        }
+        .i-high{
+            border: 0;
+            height: 20px;
+            width: 20px;
+            line-height: 18px;
+            display: inline-block;
+            text-align: center;
+            font-weight: 700;
+            color: #666666;
+            background: #ffffff;
+            font-size: 14px;
+            cursor: pointer;
+            transition: color 0.2s linear;
+            border-left: #e1e1e1 1px solid;
+        }
+    }
+    /*!一行总价*/
+    .one-allprice{
+        text-align: center;
+        font-size: 14px;
+        color: #ff464e;
+        line-height: 100px;
+        float: left;
+        margin: 13px 0 13px 0;
+        height: 100px;
+        width: 230px;
+        box-sizing: border-box;
+    }
+    /*!删除*/
+    .del{
+        width: 135px;
+        text-align: right;
+        float: left;
+        margin: 13px 0 13px 0;
+        height: 100px;
+        box-sizing: border-box;
+        span{
+            background: url(https://cart.juanpi.com/static/media/delete.91359608.png);
+            transition: transform 0.2s linear;
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            margin: 38px auto 0 0;
+            cursor: pointer;
+        }
+    }
+}
+/*！下方的全选行*/
+.all-select{
+    display: none;
+    margin: 10px 0 0 0;
+    height: 48px;
+    width: 100%;
+    line-height: 48px;
+    border-top: #efefef 1px solid;
+    color: #666666;
+    box-shadow: #fafafa 0 -1px 2px;
+    overflow: hidden;
+    .anniu-quanx{
+        float: left;
+        margin: 0 0 0 20px;
+        font-size: 14px;
+        color: #666666;
+        .sc-gou{
+            float: left;
+            height: 99%;
+            width: 40px;
+            text-align: center;
+        }
+        span{
+            transition: background 0.2s linear;
+            position: relative;
+            top: -1px;
+            vertical-align: middle;
+            display: inline-block;
+            border-radius: 15px;
+            cursor: pointer;
+            border: #9B9B9B 1px solid;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+        }
+        .checked::after{
+            transform: rotate(45deg) scale(1);
+        }
+    }
+    .zong-j{
+        float: right;
+    }
+    .tkm{
+        color: #ff464e;
+        padding: 0 5px 0 5px;
+    }
+    .jZoxra{
+        padding: 0 5px 0 5px;
+        font-size: 12px;
+    }
+    .jUfYqO{
+        color: #ff464e;
+        font-size: 18px;
+        padding: 0 5px 0 5px;
+    }
+    .POmDt{
+        transition: all 0.2s linear;
+        position: relative;
+        top: -2px;
+        height: 48px;
+        width: 200px;
+        background: #ff464e;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        border: 0;
+        margin: 0 0 0 25px;
+        cursor: pointer;
+        outline: 0;
+    }
+}

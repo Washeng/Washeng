@@ -1,0 +1,113 @@
+body{
+    background: #f6f6f6;
+    color: #666;
+    height: 100%;
+}
+.header-top{
+    width: 100%;
+    background: #f6f6f6;
+    height: 30px;
+}
+.header-top .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-top .wrapper .right-show{
+    float: right;
+}
+.right-show>ul>li{
+    float: left;
+}
+.right-show>ul>li:nth-child(3){
+    margin-left: 15px;
+    color: #ccc;
+    cursor: pointer;
+    line-height: 30px;
+}
+.right-show>ul>li:nth-child(7){
+    color: #ccc;
+    cursor: pointer;
+    line-height: 30px;
+}
+.right-show>ul>li>a{
+    margin-left: 15px;
+    color: #333;
+    cursor: pointer;
+    line-height: 30px
+}
+.right-show>ul>li:nth-child(2) a{
+    color: #ff644e;
+}
+.right-show #cart-page{
+    width: 107px;
+    height: 30px;
+    margin-left: 4px;
+}
+.right-show #cart-page a{
+    margin-left: 0;
+    width: 107px;
+    height: 30px;
+}
+.right-show #cart-page #cart-pic{
+    background: url(http://jp.juancdn.com/juanpi/images/total/icon-total.png?20160112) no-repeat 0 0;
+    background-position: 0 -156px;
+    width: 16px;
+    height: 18px;
+    margin: 4px 11px 0 12px;
+    display: inline-block;
+    vertical-align: -3px;
+}
+.right-show #cart-page #goods-num{
+    background: none repeat scroll 0 0 #ff464e;
+    border-radius: 15px;
+    color: #fff;
+    display: inline;
+    font-family: "宋体";
+    height: 18px;
+    line-height: 18px;
+    margin: 3px 0 0 5px;
+    text-align: center;
+    width: 18px;
+    display: inline-block
+}
+.right-show>ul>li:nth-child(8)>a{
+    padding-right: 10px;
+}
+.right-show>ul>li:nth-child(9)>a{
+    padding-right: 10px;
+}
+.right-show li a:hover{
+    color: #ff644e;
+}
+/* 购物袋的鼠标移入效果类 */
+.hover{
+    height: 40px;
+    background: #fff;
+}
+
+/* 客服中心的二级导航 */
+.ser-nav{
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 13;
+}
+.ser-nav>ul>li{
+    height: 26px;
+    line-height: 26px;
+}
+.ser-nav>ul>li>a{
+    color: #333;
+    display: block;
+    width: 48px;
+    margin-left: 12px!important;
+    padding-right: 10px;
+}
+.right-show li:nth-child(9):hover .ser-nav{
+    display: block;
+}

@@ -1,0 +1,347 @@
+body{
+    background: #f6f6f6;
+    color: #666;
+    height: 100%;
+    min-width: 1000px;
+}
+/*!顶部样式*/
+.login .header{
+    border-bottom: 4px solid #ff464e;
+    background: #fff;
+    .wra{
+        height: 76px;
+        position: relative;
+        width: 980px;
+        margin: 0 auto;
+    }
+    .logo{
+        display: block;
+        background: url(https://jp.juancdn.com/common/images/total/header-total.gif?20151119) no-repeat;
+        left: 0;
+        width: 210px;
+        height: 56px;
+        background-position: -78px -217px;
+        top: 15px;
+        position: absolute;
+        a{
+            display: block;
+            cursor: pointer;
+            width: 210px;
+            height: 56px;
+        }
+    }
+    .protect{
+        display: block;
+        background: url(https://jp.juancdn.com/common/images/total/header-total.gif?20151119) no-repeat;
+        background-position: 0 0;
+        height: 33px;
+        width: 465px;
+        position: absolute;
+        right: 10px;
+        top: 24px;
+    }
+}
+/*!主体页面*/
+.login .main{
+    width: 980px;
+    margin: 0px auto;
+    .login-main{
+        width: 980px;
+        margin: 20px auto 0;
+    }
+    .login-content{
+        width: 978px;
+        position: relative;
+        background: #fff;
+        overflow: hidden;
+        border: 1px solid #e2e2e2;
+        padding-bottom: 50px;
+    }
+    .title{
+        width: 878px;
+        padding: 20px 50px;
+        border-bottom: #e2e2e2 solid 1px;
+        overflow: hidden;
+    }
+    .hd{
+        color: #ff464e;
+        font-size: 16px;
+        font-family: "微软雅黑","宋体";
+        margin-right: 10px;
+        background: url(https://jp.juancdn.com/user/images/login/hd-bg.gif) no-repeat center right;
+        padding-right: 20px;
+        float: left;
+    }
+    .tips{
+        color: #666;
+        float: left;
+        margin-top: 3px;
+    }
+    .other{
+        float: right;
+        font-size: 14px;
+        color: #999;
+        a{
+            color: #0289cd;
+        }
+    }
+}
+/*!下方的表格和图片*/ 
+.form-box{
+    padding: 30px 80px 0 80px;
+    width: 818px;
+    height: auto;
+    overflow: hidden;
+    .form{
+        width: 450px;
+        float: left;
+    }
+    .login-pic{
+        overflow: hidden;
+        width: 358px!important;
+        text-align: right;
+        float:right;
+    }
+    .lo-fo .login_list{
+        li{
+            padding-bottom: 25px;
+            overflow: visible;
+            height: auto;
+            position: relative;
+            clear: both;
+        }
+        li::after{
+            clear: both;
+            content: "";
+            display: block;
+            height: 0;
+            overflow: hidden;
+        }
+    }
+
+    /*!手机号 邮箱*/
+    .active .box_border{
+        .user_img{
+            background: url(https://jp.juancdn.com/user/images/login/name2.jpg?150907) no-repeat #f1f1f1;
+            width: 39px;
+            height: 38px;
+            float: left;
+        }
+        #account{
+            height: 14px;
+            line-height: 14px;
+            float: left;
+            color: #666;
+            width: 226px;
+            padding: 12px 0 12px 5px;
+            border: 0;
+        }
+    }
+    .error-box{
+        margin-left: 10px;
+        height: 16px;
+        margin-top: 10px;
+        color: red;
+        float: left;
+        overflow: hidden;
+        .tshi{
+            display: none;
+        }
+    }
+}
+.box_border{
+    border: 1px solid #666;
+    width: 270px;
+    float: left;
+    margin-left: 80px;
+}
+/*!密码*/
+.clear .box_border{
+    border: 1px solid #c6c6c6;
+    .code_img{
+        background: url(https://jp.juancdn.com/user/images/login/code2.jpg?150907) no-repeat #f1f1f1;
+        width: 39px;
+        height: 38px;
+        float: left;
+    }
+    .normal-input{
+        border: 0;
+        width: 226px;
+        padding: 12px 0 12px 5px;
+        height: 14px;
+        line-height: 14px;
+        color: #666;
+        float: left;
+        
+    }
+    .error-box{
+        margin-left: 10px;
+        height: 16px;
+        margin-top: 10px;
+        color: red;
+        float: left;
+        overflow: hidden;
+    }
+}
+/*!验证码输入框*/
+#verify_display{
+    margin-left: 80px;
+    .normal-input{
+        border: 1px solid #c6c6c6;
+        width: 138px;
+        padding: 12px 0 12px 10px;
+        color: #666;
+        height: 14px;
+        line-height: 14px;
+        float: left;
+    }
+}
+/*!验证码*/
+.fication-code{
+    width: 110px;
+    float: left;
+    margin-left: 10px;
+    height: 40px;
+    .yan{
+        float: left;
+        width: 60px;
+        height: 39px;
+        text-align: center;
+        line-height: 39px;
+        border: 1px solid #c6c6c6;
+        font-size: 20px;
+    }
+    .change_yan{
+        float: left;
+        margin-top: 10px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    .error-box{
+        position: absolute;
+        left: 0;
+        top: 30px;
+    }
+}
+/*!勾选两种内免登录*/
+.chex-d{
+    padding-bottom: 8px;
+    height: 20px;
+    margin-left: 80px;
+    .chex{
+        width: 280px;
+        float: left;
+        span{
+            color: #5e5e5e;
+            float: left;
+        }
+        .ck{
+            vertical-align: -2px;
+            margin-right: 5px;
+            border: none;
+        }
+        .forget{
+            float: right;
+            color: #999;
+        }
+    }
+}
+
+/*!登录按钮*/
+.btn{
+    float: left;
+    width: 260px;
+    margin-left: 80px;
+    .sub{
+        background: url(https://jp.juancdn.com/user/images/login/new-login.gif?20160113) no-repeat;
+        background-position: 0 0;
+        color: #fff;
+        width: 260px;
+        height: 40px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 2px;
+        border: none;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+/*!合作网站的登录*/
+.thlogin{
+    position: relative;
+    height: 45px;
+    padding-bottom: 25px;
+    overflow: visible;
+    text-align: left;
+    margin-left: 80px;
+    .union{
+        float: left;
+        width: 142px;
+    }
+    .utitle{
+        height: 16px;
+        line-height: 16px;
+        position: relative;
+        span{
+            color: #333;
+        }
+    }
+    .thbox{
+        margin-top: 10px;
+        a{
+            float: left;
+            width: 22px;
+            height: 22px;
+            margin-right: 7px;
+            color: #5e5e5e;
+            background: url(https://jp.juancdn.com/user/images/login/new-login.gif?20160113) no-repeat;
+        }
+        .weixin{
+            background-position: -236px -194px;
+        }
+        .sina{
+            background-position: -27px -169px;
+        }
+        .taobao{
+            background-position: -27px -140px;
+        }
+    }
+    .quick{
+        margin: 14px 0 0 0;
+        font-size: 14px;
+        color: #666;
+        float: left;
+    }
+    .icons{
+        float: left;
+        background: url(https://jp.juancdn.com/common/images/total/icons-total.gif?20150514) no-repeat;
+        display: block;
+        width: 12px;
+        height: 22px;
+        background-position: right -249px;
+        margin: 0 5px 0 0;
+    }
+    .f1{
+        float: left;
+    }
+}
+/*!右侧图片*/
+.login-pic{
+    overflow: hidden;
+    width: 358px!important;
+    text-align: right;
+    float: right;
+    img{
+        border: 0;
+    }
+}
+
+/*!公司 许可证*/
+.foot-t{
+    text-align: center;
+    margin: 40px auto 40px;
+    width: 900px;
+}
+.fot-bot{
+    padding-top: 2px;
+}

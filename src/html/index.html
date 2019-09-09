@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>卷皮网</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+    <!-- 头部引入 -->
+    <div class="header"></div>
+    <script>
+      $('.header').load('header.html')
+    </script>
+
+
+
+    <!-- header的中间主体部分 -->
+    <div class="header-main">
+      <div class="wrapper">
+        <!-- 轮播图左侧的导航 -->
+        <div class="headmain-left">
+          <ul>
+            <li>
+              <a href=""
+                ><span class="headmain-icon icon-1"></span>女装<em
+                  class="s-line"
+                ></em
+              ></a>
+            </li>
+            <li>
+              <a href=""><span class="headmain-icon icon-2"></span>男装</a>
+            </li>
+            <li>
+              <a href=""
+                ><span class="headmain-icon icon-3"></span>鞋子<em
+                  class="s-line"
+                ></em
+              ></a>
+            </li>
+            <li>
+              <a href=""><span class="headmain-icon icon-4"></span>箱包</a>
+            </li>
+            <li>
+              <a href=""
+                ><span class="headmain-icon icon-5"></span>母婴<em
+                  class="s-line"
+                ></em
+              ></a>
+            </li>
+            <li>
+              <a href=""><span class="headmain-icon icon-6"></span>美妆</a>
+            </li>
+            <li>
+              <a href=""
+                ><span class="headmain-icon icon-7"></span>居家<em
+                  class="s-line"
+                ></em
+              ></a>
+            </li>
+            <li>
+              <a href=""><span class="headmain-icon icon-8"></span>家纺</a>
+            </li>
+            <li>
+              <a href=""
+                ><span class="headmain-icon icon-9"></span>文体<em
+                  class="s-line"
+                ></em
+              ></a>
+            </li>
+            <li>
+              <a href=""><span class="headmain-icon icon-10"></span>美食</a>
+            </li>
+            <li>
+              <a href=""
+                ><span class="headmain-icon icon-11"></span>数码<em
+                  class="s-line"
+                ></em
+              ></a>
+            </li>
+            <li>
+              <a href=""><span class="headmain-icon icon-12"></span>电器</a>
+            </li>
+            <li>
+              <a href=""
+                ><span class="headmain-icon icon-13"></span>内衣<em
+                  class="s-line"
+                ></em
+              ></a>
+            </li>
+            <li>
+              <a href=""><span class="headmain-icon icon-14"></span>配饰</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 轮播图 -->
+        <div class="banner">
+          <ul>
+            <li class="show">
+              <a href=""
+                ><img
+                  src="https://goods5.juancdn.com/bao/190828/8/d/5d661e4c33b0890f4d2c3bd1_700x360.jpg?iopcmd=convert&Q=88&dst=jpg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="https://goods6.juancdn.com/bao/190828/a/5/5d661d07b6f8ea47290fbb34_700x360.png?imageMogr2/quality/88!/format/png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="https://goods3.juancdn.com/bao/190827/5/3/5d64980833b089531419b3a0_700x360.jpg?iopcmd=convert&Q=88&dst=jpg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+          <ol>
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+          </ol>
+          <a href="javascript:;" id="left"><i></i></a>
+          <a href="javascript:;" id="right"><i></i></a>
+        </div>
+        <!-- 轮播图右侧的nav -->
+        <div class="headmain-right">
+          <dl>
+            <dd>
+              <a href=""
+                ><img
+                  src="http://s.juancdn.com/juanpi/images/banners/r-1.jpg"
+                  alt=""
+              /></a>
+            </dd>
+            <dd>
+              <a href=""
+                ><img
+                  src="http://s.juancdn.com/juanpi/images/banners/r-2.jpg"
+                  alt=""
+              /></a>
+            </dd>
+            <dd>
+              <a href=""
+                ><img
+                  src="http://s.juancdn.com/juanpi/images/banners/r-3.jpg"
+                  alt=""
+              /></a>
+            </dd>
+            <dd>
+              <a href=""
+                ><img
+                  src="http://s.juancdn.com/juanpi/images/banners/r-4.jpg"
+                  alt=""
+              /></a>
+            </dd>
+            <dd class="last">
+              <a href=""
+                ><img
+                  src="http://s.juancdn.com/juanpi/images/banners/r-5.jpg"
+                  alt=""
+              /></a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <!-- 卷皮客户端二维码 -->
+      <div class="banner-right-code">
+        <img
+          src="http://jp.juancdn.com/juanpi/images/global/jp-app-index.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- header底部的今日品牌 -->
+    <div class="header-bot">
+      <!-- 顶部的今日品牌盒子 -->
+      <div class="today-brand">
+        <!-- 今日品牌 -->
+        <div class="today-word">
+          今日品牌<span class="today-words">TODAY'S BRAND</span>
+        </div>
+        <!-- 全部品牌 -->
+        <div class="all-brand">
+          <a href=""><span>全部品牌</span><i class="icon-all"></i></a>
+        </div>
+      </div>
+      <!-- 中部的几个倒计时活动 -->
+      <div class="brand-index">
+        <!-- 倒计时活动  -->
+        <div class="brand-list">
+            <ul>
+              <li>
+                <a href="">
+                  <!-- pic和倒计时 -->
+                  <div class="brand-status">
+                    <img src="https://goods2.juancdn.com/bao/190830/3/7/5d6882ec33b0897fb93b6134_680x280.jpg?iopcmd=convert&Q=88&dst=jpg" alt="">
+                    <!-- 倒计时 -->
+                    <div class="brand-times">
+                      <p><span class="icon-time"></span>剩余&nbsp;
+                        <span><em>3</em><i>天&nbsp;</i></span>
+                        <span><em>19</em><i>时&nbsp;</i></span>
+                        <span><em>36</em><i>分&nbsp;</i></span>
+                        <span><em>30</em><i>秒&nbsp;</i></span>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 进入活动 -->
+                  <div class="brand-card">
+                    <span class="title">芊艺秋装上新</span>
+                    <span class="discount">进入活动</span>
+                  </div>
+                </a></li>
+              <li>
+                  <a href="">
+                    <div class="brand-status">
+                      <img src="https://goods8.juancdn.com/bao/190730/f/5/5d3fe283b6f8ea6cb615c193_680x280.jpg?iopcmd=convert&Q=88&dst=jpg" alt="">
+                      <!-- 倒计时 -->
+                      <div class="brand-times">
+                        <p><span class="icon-time"></span>剩余&nbsp;
+                          <span><em>3</em><i>天&nbsp;</i></span>
+                          <span><em>19</em><i>时&nbsp;</i></span>
+                          <span><em>36</em><i>分&nbsp;</i></span>
+                          <span><em>30</em><i>秒&nbsp;</i></span>
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 进入活动 -->
+                  <div class="brand-card">
+                      <span class="title">全场一折起</span>
+                      <span class="discount">进入活动</span>
+                    </div>
+                  </a></li>
+              <li>
+                  <a href="">
+                    <div class="brand-status">
+                      <img src="https://goods6.juancdn.com/bao/190830/a/1/5d688226b6f8ea6e9c75d263_680x280.jpg?iopcmd=convert&Q=88&dst=jpg" alt="">
+                      <!-- 倒计时 -->
+                      <div class="brand-times">
+                        <p><span class="icon-time"></span>剩余&nbsp;
+                          <span><em>3</em><i>天&nbsp;</i></span>
+                          <span><em>19</em><i>时&nbsp;</i></span>
+                          <span><em>36</em><i>分&nbsp;</i></span>
+                          <span><em>30</em><i>秒&nbsp;</i></span>
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 进入活动 -->
+                    <div class="brand-card">
+                      <span class="title">全场一折起</span>
+                      <span class="discount">进入活动</span>
+                    </div>
+                  </a></li>
+              <li>
+                  <a href="">
+                    <div class="brand-status">
+                      <img src="https://goods2.juancdn.com/bao/190830/3/6/5d68836833b0896e6c61b477_680x280.jpg?iopcmd=convert&Q=88&dst=jpg" alt="">
+                      <!-- 倒计时 -->
+                      <div class="brand-times">
+                        <p><span class="icon-time"></span>剩余&nbsp;
+                          <span><em>3</em><i>天&nbsp;</i></span>
+                          <span><em>19</em><i>时&nbsp;</i></span>
+                          <span><em>36</em><i>分&nbsp;</i></span>
+                          <span><em>30</em><i>秒&nbsp;</i></span>
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 进入活动 -->
+                    <div class="brand-card">
+                        <span class="title">欧昵雪两件79元起</span>
+                        <span class="discount">进入活动</span>
+                    </div>
+                  </a></li>
+            </ul>
+        </div>
+        <!-- 更多品牌特卖 -->
+        <div class="more-brand">
+            <ul>
+              <li>更多品牌特卖：</li>
+              <li><a href=""><img src="https://goods7.juancdn.com/bao/161104/c/5/581c4bb2151ad1ef688b4576_180x90.png" alt=""></a></li>
+              <li><a href=""><img src="https://goods8.juancdn.com/bao/170814/f/f/59917c0b8150a14c113024bf_180x90.png" alt=""></a></li>
+              <li><a href=""><img src="https://goods8.juancdn.com/bao/160530/e/d/574ba6c6151ad10d708b463f_180x90.png" alt=""></a></li>
+              <li><a href=""><img src="https://goods4.juancdn.com/bao/160428/7/9/5721c9a392be59c0618b459a_180x90.png" alt=""></a></li>
+              <li><a href=""><img src="https://goods4.juancdn.com/brand/170412/7/c/58ed9960a43d1f4fa13a6b02_180x90.png" alt=""></a></li>
+              <li><a href=""><img src="https://goods4.juancdn.com/brand/160914/7/0/57d9007f151ad1b66f8b45f4_180x90.png" alt=""></a></li>
+              <li><a href=""><img src="https://goods2.juancdn.com/bao/171229/2/2/5a45afbc8150a17ffa15c10b_180x90.png" alt=""></a></li>
+              <li><a href=""><img src="https://goods2.juancdn.com/bao/160125/3/5/56a5cb6e92be59aea48b4586_180x90.png" alt=""></a></li>
+              <li class="last"><a href="">查看全部<span class="see-more"></span></a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- main的今日新品主体部分 -->
+    <div class="main">
+      <!-- 顶部的今日新品盒子 -->
+      <div class="today-brand">
+          <!-- 今日新品 -->
+          <div class="today-word">
+            今日新品<span class="today-words">TODAY'S NEW</span>
+          </div>
+          <!-- 每日上新 -->
+          <div class="day-updata">
+              每天10点上新
+          </div>
+      </div>
+      <!-- 渲染的商品详情 -->
+      <div class="goods-list">
+        <ul>
+          <li>
+            <!-- 商品的图片 -->
+            <div class="good-pic">
+              <a href=""><img src="https://goods6.juancdn.com/tao/190814/b/4/5d53d7cc33b0891b163aabbe_800x800.jpg?imageMogr2/thumbnail/310x310!/quality/88!/format/jpg" alt=""></a>
+            </div>
+            <!-- 商品的价格 -->
+            <div class="good-price">
+              <span class="current-price">
+                <i>￥</i><em>168</em>
+              </span>
+              <span class="old-price">
+                <i>￥</i><em>299</em>
+              </span>
+            </div>
+            <!-- 商品的标题 -->
+            <h3>
+              <a href="">美动态减龄连衣裙显瘦</a>
+              <span>上新</span>
+            </h3>
+            <!-- 悬停的收藏小爱心 -->
+            <a href="" id="love-code">
+              <i></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 滑倒main时的从上到下的导航栏 -->
+    <div class="fixed-topnav">
+      <ul>
+        <li class="first"><a href="">今日上新</a></li>
+        <li><a href="">女装</a></li>
+        <li><a href="">男装</a></li>
+        <li><a href="">鞋子</a></li>
+        <li><a href="">箱包</a></li>
+        <li><a href="">母婴</a></li>
+        <li><a href="">美妆</a></li>
+        <li><a href="">居家</a></li>
+        <li><a href="">家纺</a></li>
+        <li><a href="">文体</a></li>
+        <li><a href="">美食</a></li>
+        <li><a href="">数码</a></li>
+        <li><a href="">电器</a></li>
+        <li><a href="">内衣</a></li>
+        <li><a href="">配饰</a></li>
+        <li class="last"><a href="">[即将上线]</a></li>
+      </ul>
+    </div>
+
+
+    <!-- 底部引入 -->
+    <div class="foot"></div>
+    <script>
+      $('.foot').load('foot.html')
+    </script>
+  </body>
+  <script src="../js/index.js"></script>
+</html>

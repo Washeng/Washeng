@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+    <div class="login">
+        <!-- 顶部 -->
+        <div class="header">
+            <div class="wra">
+                <div class="logo"><a href="index.html" target="_blank"></a></div>
+                <div class="protect"><a href=""></a></div>
+            </div>
+        </div>
+        <!-- 主体页面 -->
+        <div class="main">
+            <div class="login-main">
+                <!-- 登录的表格 -->
+                <div class="login-content">
+                    <!-- 顶部开头 -->
+                    <div class="title">
+                        <span class="hd">新用户注册</span>
+                        <span class="tips">注册卷皮网，赢积分换好礼！</span>
+                        <p class="other">已有账号，<a href="login.html" target="_blank">立即登录</a></p>
+                    </div>
+                    <!-- 下方表单和图片 -->
+                    <div class="form-box">
+                        <!-- 表单 -->
+                        <div class="form">
+                            <form action="http://10.31.157.39:8088/js/Project2/php/register.php" class="lo-fo" method="post">
+                                <ul class="login_list">
+                                    <!-- 手机号 邮箱 -->
+                                    <li class="active">
+                                        <label class="nor-word">手机号码：</label>
+                                        <!--中间的输入框 -->
+                                        <div class="box_border">
+                                            <input type="text" id="account" class="normal-input" name="account">
+                                        </div>
+                                        <!-- 报错的框 -->
+                                        <div class="error-box" id="account_warn">
+                                            <!-- 报错的红色x -->
+                                            <strong></strong>
+                                            <p class="tshi">请输入手机号码</p>
+                                        </div>
+                                        <!-- 或邮箱注册 -->
+                                        <span class="otherre">或<a href="">邮箱注册</a></span>
+                                    </li>
+                                    <!-- 密码 -->
+                                    <li class="clear">
+                                        <label class="nor-word">创建密码：</label>
+                                        <div class="box_border">
+                                            <input type="password" class="normal-input" name="password">
+                                        </div>
+                                        <div class="error-box" id="password_warn">
+                                            <!-- 报错的红色x -->
+                                            <strong></strong>
+                                            <p class="tshi">请输入密码</p>
+                                        </div>
+                                        <!-- 强度验证 -->
+                                        <div class="grade">
+                                            <span class="cur1"></span>
+                                            <span></span>
+                                            <span></span> 
+                                            <em class="cur1">弱</em>
+                                        </div>
+                                    </li>
+                                    <!-- 确认密码 -->
+                                    <li class="re-clear">
+                                            <label class="nor-word">确认密码：</label>
+                                        <div class="box_border">
+                                            <input type="password" class="normal-input" name="re-password">
+                                        </div>
+                                        <div class="error-box" id="re-password">
+                                            <!-- 报错的红色x -->
+                                            <strong></strong>
+                                            <p class="tshi">请输入手机号码</p>
+                                        </div>
+                                    </li>
+                                    <!-- 验证码 -->
+                                    <li id="verify_display">
+                                        <label class="nor-word">验证码：</label>
+                                        <input type="text" class="normal-input" placeholder="验证码" name="code">
+                                        <div class="fication-code">
+                                            <span class="yan">WQFE</span>
+                                            <span class="change_yan">换一批</span>
+                                        <div class="error-box" id="code_warn">
+                                                <p class="tshi">请输入手机号码</p>
+                                        </div>
+                                    </li>
+                                    <!-- 立即注册 -->
+                                    <li>
+                                        <div class="btn">
+                                            <input type="submit" class="sub" value="立即注册" name="submit">
+                                        </div>
+                                    </li>
+                                    <!-- 勾选两种内免登录 -->
+                                    <li class="chex-d">
+                                            <div class="chex">
+                                                <span><label><input type="checkbox" class="ck" name="auto" checked="checked"> 我已阅读并接受 </label></span>
+                                                <a class="forget " href="">《卷皮用户协议》</a>
+                                            </div>
+                                    </li>
+                                    <!-- 合作网站的登录
+                                    <li class="thlogin">
+                                        <div class="union">
+                                            <p class="utitle"><span>合作网站账号登录</span></p>
+                                            <div class="thbox">
+                                                <a href="" class="weixin"></a>
+                                                <a class="sina" href=""></a>
+                                                <a href="" class="taobao"></a>
+                                            </div>
+                                        </div>
+                                        <a href="" class="quick"><em class="icons"></em><span class="fl">手机快捷登录&gt;&gt;</span></a>
+                                    </li> -->
+                                </ul>
+                            </form>
+                        </div>
+                        <!-- 右侧图片 -->
+                        <div class="regi-pic">
+                            <img src="https://jp.juancdn.com/user/images/login/login-bj-ad01.png?ts=20181022174388-1&sv=449ce9ee" alt="">
+                            <p class="line"></p>
+                            <div class="thbox">
+                                <p class="un-title">
+                                    <span>无需注册，快捷登录</span>
+                                </p>
+                                <a href="" class="weixin"></a>
+                                <a class="sina" href=""></a>
+                                <a href="" class="taobao"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 公司 许可证 -->
+                <p class="foot-t">武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 | <a href="">鄂公网安备42018502000390号</a> | 食品流通许可证 SP4201991510041888</p>
+                <!-- 最下面的 -->
+                <p class="fot-bot">Copyright © 2010 - 2019 JuanPi.com All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>

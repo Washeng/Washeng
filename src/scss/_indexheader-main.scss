@@ -1,0 +1,253 @@
+.header-main{
+    position: relative;
+}
+.header-main .wrapper{
+    width: 1200px;
+    background-color: #f7f7f7;
+    height: 380px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+/*!轮播图左侧的导航*/
+.header-main .headmain-left{
+    position: relative;
+    z-index: 10;
+    width: 210px;
+    display: block;
+    float: left;
+}
+.header-main .headmain-left ul{
+    width: 190px;
+    height: 377px;
+    overflow: hidden;
+    padding: 2px 10px 1px;
+    background-color: #fff;
+}
+.header-main .headmain-left>ul>li{
+    float: left;
+    width: 50%;
+    height: 54px;
+    overflow: hidden;
+    line-height: 53px;
+    text-align: center;
+    background: url(http://jp.juancdn.com/juanpi/images/global/dotted_line.png) repeat-x bottom;
+}
+.headmain-left>ul a{
+    color: #5e5e5e;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+.headmain-icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    background: url(http://jp.juancdn.com/juanpi/images/global/ct_icons.png?20160112) no-repeat 0 0;
+    margin-right: 5px;
+}
+/*!循环给12个nav加图标*/
+@for $i from 0 through 13{//$i:特殊变量
+    .icon-#{$i+1}{
+        background-position: -24*$i+px 0;
+    }
+}
+.s-line{
+    float: right;
+    width: 1px;
+    height: 15px;
+    background-color: #eee;
+    margin-top: 18px;
+}
+/*鼠标悬停时的样式*/
+.headmain-left>ul a:hover{
+    color:  #ff464e;
+}
+.headmain-left>ul a:hover .icon-1{
+    background-position: 0 -24px;
+}
+.headmain-left>ul a:hover .icon-2{
+    background-position: -24px -24px;
+}.headmain-left>ul a:hover .icon-3{
+    background-position: -48px -24px;
+}.headmain-left>ul a:hover .icon-4{
+    background-position: -72px -24px;
+}.headmain-left>ul a:hover .icon-5{
+    background-position: -96px -24px;
+}.headmain-left>ul a:hover .icon-6{
+    background-position: -120px -24px;
+}.headmain-left>ul a:hover .icon-7{
+    background-position: -144px -24px;
+}.headmain-left>ul a:hover .icon-8{
+    background-position: -168px -24px;
+}.headmain-left>ul a:hover .icon-9{
+    background-position: -192px -24px;
+}.headmain-left>ul a:hover .icon-10{
+    background-position: -216px -24px;
+}.headmain-left>ul a:hover .icon-11{
+    background-position: -240px -24px;
+}.headmain-left>ul a:hover .icon-12{
+    background-position: -264px -24px;
+}.headmain-left>ul a:hover .icon-13{
+    background-position: -288px -24px;
+}.headmain-left>ul a:hover .icon-14{
+    background-position: -312px -24px;
+}
+// @for $ic from 0 through 13{//$i:特殊变量
+//     .headmain-left>ul a:hover .icon-#{$ic+1}{
+//         background-position: -24*$ic+px -24px;
+//     }
+// }
+
+/*!轮播图效果*/
+.banner{
+    margin-left: 20px;
+    position: relative;
+    height: 360px;
+    width: 700px;
+    z-index: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    float: left;
+}
+.banner>ul>li a{
+    display: block;
+    height: 360px;
+    width: 700px;
+    cursor: pointer;
+}
+
+.banner ul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
+.banner ul li img {
+    width: 100%;
+    display: block;
+}
+.banner ol {
+    position: absolute;
+    bottom: 10px;
+    width: 57px;
+    right: 50%;
+    margin-right: -28.5px;
+}
+.banner ol li {
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin-right: 7px;
+    width: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-indent: -999px;
+}
+.banner ol li.active {
+    background: transparent;
+    border: 3px solid #fff;
+}
+#left,
+#right {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    position: absolute;
+    width: 29px;
+    z-index: 12;
+    top: 50%;
+    margin-top: -22.5px;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+#left i,#right i{
+    background: url(http://jp.juancdn.com/juanpi/images/global/arrow.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 21px;
+    margin: 12px 0 0 9px;
+    overflow: hidden;
+    width: 13px;
+}
+#right i{
+    background-position: top right;
+}
+.banner ul li.show {
+   opacity: 1;
+}
+
+/*!轮播图右侧导航*/
+.headmain-right{
+    height: 360px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 250px;
+    z-index: 10;
+    overflow: hidden;
+}
+.headmain-right dl{
+    width: 251px;
+    height: 360px;
+    overflow: hidden;
+    background-color: #e2e2e2;
+}
+.headmain-right dl dd{
+    float: left;
+    display: inline;
+    width: 124.5px;
+    height: 119px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 1px 1px 0;
+    cursor: pointer;
+}
+.headmain-right>dl a>img{
+    width: 124px;
+    max-height: 119px;
+}
+.headmain-right .last{
+    width: 250px;
+    height: 120px;
+}
+.headmain-right .last a>img{
+    width: 250px;
+    max-height: 120px;
+}
+/*鼠标悬停的右侧图片透明度*/
+.headmain-right>dl dd:hover img{
+    opacity: 0.8;
+}
+
+/*卷皮客户端的二维码*/
+.banner-right-code{
+    width: 237px;
+    height: 35px;
+    position: absolute;
+    right: -90px;
+    top: 0;
+}
+

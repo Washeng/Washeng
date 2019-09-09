@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/shopcar.css" />
+  </head>
+  <body>
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+    <div class="shopcar">
+      <!-- header顶部 -->
+      <div class="header-top">
+        <div class="htop-left"></div>
+        <div class="htop-right">
+          <a href="index.html">返回首页</a>
+          <a class="jTemgK" href="">我的订单</a>
+          <a class="jTemgK" href="">商家入住</a>
+          <a class="jTemgK" href="">商家中心</a>
+          <a class="jTemgK" href="">客户服务</a>
+        </div>
+      </div>
+      <!-- header logo部分 -->
+      <div class="header-logo">
+        <div class="logo-pic">
+          <a href="index.html"></a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <!-- 上方的商品信息导航 -->
+        <div class="jies-good">
+          <div class="fw fw-xinxi">商品信息</div>
+          <div class="fw">单价/原价</div>
+          <div class="fw fw1">数量</div>
+          <div class="fw fw2">小计</div>
+          <div class="fw fw3">操作</div>
+        </div>
+        <!-- 商品购物车列表 -->
+        <div class="jies-produce">
+          <!-- 没有商品时的显示 -->
+          <div class="none">
+            <div class="n-box">
+              <div>看到喜欢的带回家吧</div>
+              <a href="" class="no-word">今日推荐</a>
+            </div>
+          </div>
+          <!-- 上方的商品列表 -->
+          <div class="produce-list">
+            <!-- 跨店促销行-->
+            <div class="cuxiao">
+              <!-- 勾选按钮 -->
+              <div class="gou">
+                <span class="checked gx1 col"></span>
+              </div>
+              <!-- 跨店促销文字 -->
+              <div class="sc-caSCKo hEoyiQ">
+                <img
+                  class="jklnfm"
+                  src="http://s2.juancdn.com/bao/170615/2/b/5942339ea43d1f47ef70e59a_72x72.png"
+                />跨店促销
+              </div>
+              <a class="manjian" href="">已享满98元减10元 再凑38元可减5元 &nbsp;去凑单 >></a>
+            </div>
+            <!-- 商品的购买详细 -->
+            <div class="buy-good">
+              <div class="b-produce">
+                <!-- 勾选 -->
+                <div class="gouxuan"><span class="checked gx2 col"></span></div>
+                <a href="" class="pi-p"><img src="https://goods4.juancdn.com/goods/181115/6/4/5becd27533b08968605b441f_800x800.jpg?imageMogr2/thumbnail/310x310!/quality/88!/format/jpg" alt=""></a>
+                <!-- 选择的规则 -->
+                <div class="xq-pro">
+                  <strong class="bt">斜纹磨毛大版四件套</strong>
+                  <span class="wen"
+                    >1.8m床（被套180x220cm 床单230x230cm
+                    枕套48x74cmx2），浪漫花环</span
+                  >
+                </div>
+                <!-- 单价 -->
+                <div class="jiage">￥<em class="xianjia">109</em>/ ￥<i class="danjia">299</i></div>
+                <!-- 数量加减 -->
+                <div class="num-change">
+                  <!-- <span class="">-</span>
+                  <span class="i-num">1</span>
+                  <span class="i-high">+</span> -->
+                  <input type="button" class="i-low" value="-"></i>
+                  <input type="text" class="i-num"value="1" />
+                  <input type="button" class="i-high" value="+"></i>
+                </div>
+                <!-- 一行总价 -->
+                <div class="one-allprice">
+                  ￥109.00
+                </div>
+                <!-- 删除 -->
+                <div class="del"><span class="shanchu"></span></div>
+              </div>
+            </div>
+          </div>
+          <!-- 下方全选行 -->
+          <div class="all-select">
+            <!-- 全选按钮 -->
+            <div class="anniu-quanx">
+              <div class="sc-gou">
+                <span class="checked col"></span>
+              </div>
+              全选
+            </div>
+            <!-- 总计 -->
+            <div class="zong-j">
+              已选择<span class="tkm">2</span>件，
+              <span class="jZoxra">总额：￥128.9 &nbsp; 满减：￥11.99</span>， 合计（不含运费）
+              <span class="jUfYqO">￥116.91</span>
+              <button class="POmDt">去结算</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 引入底部 -->
+    <div class="foot"></div>
+    <script>
+      $(".foot").load("foot.html");
+    </script>
+    <script src="../js/shopcar.js"></script>
+  </body>
+</html>

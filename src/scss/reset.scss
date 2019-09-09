@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font:12px/1.5 "微软雅黑",Tahoma,Helvetica,Arial,'宋体',sans-serif,\5b8b\4f53;;
+}
+em,
+i,
+b,
+strong {
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+情况：图片放在超链接a里面，在ie的低版本浏览器中会出现蓝色边框（ie8）
+解决：img{border:0;}
+
+情况：图片放在块状元素中，会将盒子在自身高度的基础上，再撑大3~5px
+解决：img{display:block;}
+*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+    height: 0;
+    visibility: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}

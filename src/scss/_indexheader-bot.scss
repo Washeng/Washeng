@@ -1,0 +1,186 @@
+/*!今日品牌的盒子*/
+.header-bot{
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 30px auto 0px auto;
+    background: #fff;
+}
+/*！顶部的今日品牌盒子*/
+.header-bot .today-brand{
+    line-height: 60px;
+    padding: 0 16px;
+    overflow: hidden;
+    .today-word{
+        margin-left: 4px;
+        font-family: "微软雅黑","宋体";
+        height: 62px;
+        float: left;
+        font-size: 20px;
+        color: #333;
+        font-weight: bold;
+        .today-words{
+            margin-right: 10px;
+            font-weight: normal;
+            font-size: 16px;
+            color: #bbb;
+            margin-left: 10px;
+        }
+    }
+    .all-brand{
+        margin-right: 6px;
+        float: right;
+        font-size: 12px;
+        font-family: "微软雅黑","宋体";
+        margin-top: 3px;
+        cursor: pointer;
+        span{
+            color: #ff464e;
+            font-size: 14px;
+        }
+        i{
+            margin-top: -2px;
+            background: url(http://jp.juancdn.com/juanpi/images/icon/icon_arrow-new.png?20180113) no-repeat left center;
+            width: 9px;
+            height: 10px;
+            display: inline-block;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+    }
+} 
+/*！中部的几个倒计时活动*/
+.brand-index{
+    width: 1180px;
+    background: #fff;
+    padding: 0px 10px 0;
+    height: auto;
+    overflow: hidden;
+}
+.brand-list{
+    overflow: hidden;
+}
+.brand-index .brand-list ul{
+    li{
+        width: 278px;
+        float: left;
+        margin: 0 8px;
+        a{
+            height: 170px;
+            background: none repeat scroll 0 0 #fff;
+            cursor: pointer;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+    }
+}
+/*每一项的活动*/
+.brand-status{
+    height: 130px;
+    width: 278px;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+    img{
+        width: 278px;
+        display: block;
+        margin: 0 auto;
+        height: 130px;
+    }
+    .brand-times{
+        width: 281px;
+        height: 22px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        line-height: 22px;
+        background: #5e5e5e;
+        opacity: 0.9;
+        p{
+            width: 281px;
+            text-align: center;
+            line-height: 22px;
+            color: #fff;
+            z-index: 2;
+            .icon-time{
+                display: inline-block;
+                background: url(http://jp.juancdn.com/juanpi/images/icon/clock.png) no-repeat;
+                width: 14px;
+                height: 14px;
+                margin-right: 8px;
+                background-size: 100% 100%;
+                vertical-align: top;
+                margin-top: 4px;
+            }
+        }
+    }   
+}
+.brand-card{
+    height: 40px;
+    line-height: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fafafa;
+    .title{
+        float: left;
+        margin: 10px 0 0 10px;
+        font-family: "微软雅黑";
+        color: #333;
+    }
+    .discount{
+        width: 68px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        color: #ff464e;
+        float: right;
+        font-size: 14px;
+        margin: 6px 10px 0 0;
+    }
+}
+/*鼠标悬停进入活动的背景*/
+.brand-list>ul a:hover .discount{
+    background: #ff464e;
+    border-radius: 2px;
+    color: #fff;
+}
+/*!更多品牌特卖*/
+.more-brand{
+    margin: 20px 0;
+    ul{
+        overflow: hidden;
+    }
+    li{
+        width: 100px;
+        font-size: 14px;
+        line-height: 35px;
+        height: 35px;
+        float: left;
+        margin: 0 10px;
+        a{
+            cursor: pointer;
+            img{
+                height: 35px;
+            }
+        }
+    }
+    .last{
+        width: 80px;
+        text-align: right;
+        cursor: pointer;
+        a{
+            color: #ff464e;
+            font-size: 14px;
+        }
+        .see-more{
+            background: url(http://jp.juancdn.com/juanpi/images/icon/icon_arrow-new.png?20180113) no-repeat left center;
+            width: 9px;
+            height: 10px;
+            display: inline-block;
+            margin-top: 1px;
+            margin-left: 4px;
+        }
+    }
+}

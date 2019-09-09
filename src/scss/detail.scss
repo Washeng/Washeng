@@ -1,0 +1,1218 @@
+.content{
+    background: #fff;
+    .detail-main{
+        width: 1200px;
+        margin: 0px auto;
+        padding-top: 20px !important;
+    }
+}
+
+/*!顶部*/
+.place-show{
+    margin: 0 0 20px 0px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    .place-explain{
+        float: left;
+    }
+    a{
+        margin: 0 5px;
+        font-size: 14px;
+        color: #333;
+    }
+    em{
+        width: 6px;
+        height: 10px;
+        display: inline-block;
+        background: url(http://jp.juancdn.com/juanpi/images/shopping/tab_arrow.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+/*!商品详情*/
+.goods-show{
+    height: auto;
+    padding: 0 20px 0 0px;
+    width: 1200px;
+    background: #fff;
+}
+/*!左边的图片盒子*/
+.detailpic-box{
+    display: inline-block;
+    width: 480px;
+    vertical-align: top;
+    margin-bottom: 60px;
+    position: relative;
+}
+/*!左侧的切换商品图片*/
+.left-pic{
+    float: left;
+}
+.left-pic .goods-li{
+    width: 58px;
+    display: inline-block;
+    font-size: 0;
+    margin-right: 18px;
+    vertical-align: middle;
+    li{
+        border: 1px solid #ebebeb;
+        height: 58px;
+        margin-bottom: 8px;
+        width: 58px;
+        a{
+            display: block;
+            height: 58px;
+            overflow: hidden;
+            width: 58px;
+        }
+        img{
+            width: 58px;
+            display: block;
+        }
+    }
+}
+/*!大图详情*/
+.goods-show .pic{
+    display: inline-block;
+    height: 400px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    img{
+        display: block;
+        width: 400px;
+    }
+    .sf{
+        width: 50px;
+        height: 50px;
+        background: orange;
+        opacity: 0.3;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: none;
+        cursor: move;
+    }
+}
+/*!放大镜*/
+.bf{
+    width: 380px;
+    height: 450px;
+    position: absolute;
+    left: 500px;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+    .bpic{
+        width: 700px;
+        height: 700px;
+        display: block;
+        position: absolute;
+    }
+}
+
+/*!100%人工质检*/
+.sale-txt{
+    margin-top: 20px;
+    margin-left: 80px;
+    .sale_text{
+        display: inline-block;
+    }
+    .sale_ad_txt{
+        display: inline;
+        font-size: 12px;
+        color: #666;
+        margin-left: 0;
+    }
+    .sale_lowprice,.sale_reason{
+        display: inline;
+        font-size: 12px;
+        color: #666;
+        margin-left: 26px;
+    }
+}
+/*!收藏举报*/
+.sector-other{
+    width: 338px;
+    clear: both;
+    margin: 20px 0 0 76px;
+    line-height: 20px;
+    div{
+        float: left;
+        a{
+            color: #666;
+        }
+    }
+    .collect{
+        margin-right:60px;
+        a:hover{
+            color: #ff464e;
+            cursor: pointer;
+        }
+        i{
+            width: 21px;
+            height: 17px;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: -4px;
+            margin-right: 5px;
+            background: url(http://jp.juancdn.com/juanpi/images/total/mall-total.gif?20160310) no-repeat;
+            background-position: -103px 2px;
+        }
+    }
+    .share-box{
+        .txt{
+            float: left;
+        }
+        .txt:hover{
+            color: #ff464e;
+            cursor: pointer;
+        }
+        i{
+            background: url(http://jp.juancdn.com/juanpi/images/shopping/share.png);
+            width: 12px;
+            height: 12px;
+            background-size: 100%;
+            vertical-align: middle;
+            margin-top: -4px;
+            display: inline-block;
+            overflow: hidden;
+            margin-right: 5px;
+        }
+        .share{
+            margin-left: 5px;
+            height: 16px;
+            display: none;
+        }
+        .bdshare-button{
+            float: left;
+        }
+        .bds{
+            float: left;
+            font-size: 12px;
+            padding-left: 17px;
+            line-height: 16px;
+            height: 16px;
+            background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png);
+            background-repeat: no-repeat;
+            cursor: pointer;
+            margin: 6px 6px 6px 0;    
+        }
+        .bds_qzone{
+            margin-top: 2px;
+            background-position: 0 -52px;
+        }
+        .bds_tsina{
+            background-position: 0 -104px;
+            margin-top: 2px;
+        }
+        .bds_tqq{
+            background-position: 0 -260px;
+            margin-top: 0px;
+        }
+    }
+    .report{
+        margin-left: 60px;
+        a:hover{
+            color: #ff464e;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/*!中间商品的尺寸选择*/
+.good-wrap{
+    width: 460px;
+    margin-left: 36px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    h2{
+        color: #333;
+        font-size: 18px;
+        max-height: 52px;
+        width: 460px;
+        overflow-y: hidden;
+        font-weight: bold;
+    }
+}
+/*!商品的详细描述*/
+.sector-info{
+    width: 460px;
+    line-height: 32px;
+    padding-bottom: 80px;
+}
+/*!价格和配送*/
+.basic{
+    padding: 0;
+    border-bottom: 1px dotted #e2e2e2;
+    .d-price{
+        background: #FFF0F0;
+        margin: 10px 0 0 0;
+        padding: 8px 0 10px 10px;
+        position: relative;
+    }
+    /*!倒计时*/
+    .djs{
+        position: absolute;
+        top: 8px;
+        width: 204px;
+        text-align: right;
+        color: #666;
+        font-size: 12px;
+        right: 20px;
+        span{
+            color: #666;
+        }
+        em{
+            font-family: "arial";
+            font-size: 12px;
+        }
+    }
+    /*!参考价*/
+    .tm-price{
+        line-height: 26px;
+        overflow: hidden;
+        .global-price{
+            float: left;
+        }
+        .current{
+            font-size: 28px;
+            color: #ff464e;
+            float: left;
+            i{
+                font-size: 18px;
+                font-family: "微软雅黑","verdana";
+            }
+            .js-cprice{
+                font-size: 28px;
+                color: #ff464e;
+            }
+        }
+        .old{
+            line-height: 32px;
+            color: #999;
+            margin-left: 10px;
+            font-size: 14px;
+            em{
+                font-family: "微软雅黑","verdana";
+                font-size: 14px;
+                margin-left: 4px;
+            }
+            .js-opricce{
+                line-height: 32px;
+                color: #999;
+                margin-left: 10px;
+                font-size: 14px;
+            }
+        }
+
+    }
+    /*!促销*/
+    .activity-info{
+        overflow: hidden;
+        dt{
+            color: #999;
+            width: 50px;
+            float: left;
+        }
+        .activity-dd{
+            float: left;
+        }
+        .activity-c{
+            width: 398px;
+        }
+        .activity-item{
+            color: #333;
+            cursor: pointer;
+            padding-top: 8px;
+            position: relative;
+        }
+        .brand-tag-red{
+            font-family: '宋体';
+            color: #fff;
+            margin-right: 10px;
+            background: #FF9000;
+            padding: 0px 2px;
+            line-height: 14px;
+            border: 1px solid #FF9000;
+            border-radius: 1px;
+            float: left;
+        }
+        .info{
+            white-space: normal;
+            line-height: 16px;
+            width: 340px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            .detail{
+                color: #333;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+            .detail:hover{
+                color: #ff464e;
+            }
+            .act_detail_icon{
+                width: 8px;
+                height: 9px;
+                background: url(http://jp.juancdn.com/juanpi/images/shopping/act_detail.png);
+                background-size: 100% 100%;
+                display: inline-block;
+                margin-left: 2px;
+            }
+        }
+    }
+
+    .good-send{
+        margin: 6px 0 6px 10px;
+    }
+}
+/*!配送*/
+.good-send::after{
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+}
+.good-send{
+    margin: 6px 0 6px 10px;
+    dt{
+        color: #999;
+        width: 50px;
+        float: left;
+    }
+    dd{
+        color: #666;
+        position: relative;
+        font-size: 12px;
+        font-family: "宋体";
+        float: left;
+    }
+    .address{
+        cursor: pointer;
+        color: #333;
+        float: left;
+        .address_selector{
+            display: inline-block;
+            border: 1px solid #dbdbdb;
+            height: 18px;
+            line-height: 18px;
+            padding: 0 8px;
+            margin-left: 5px;
+        }
+        .js-address{
+            color: #333;
+            font-size: 12px;
+        }
+        i{
+            display: inline-block;
+            margin-left: 4px;
+            margin-top: 2px;
+            vertical-align: middle;
+            overflow: hidden;
+            background: transparent;
+            border: 5px solid transparent;
+            border-top-color: #999;
+            width: 0;
+            height: 0;
+        }
+    }
+    /*!城市选择*/
+    .city{
+        display: none;
+        position: absolute;
+        top: 27px;
+        left: 0;
+        width: 360px;
+        padding: 10px 0;
+        z-index: 11;
+        border: #e2e2e2 solid 1px;
+        background: #fff;
+        text-indent: 15px;
+        li{
+            float: left;
+            width: 120px;
+            height: 24px;
+            line-height: 24px;
+        }
+        a{
+            color: #0289cd;
+        }
+        a:hover{
+            text-decoration: underline
+        }
+    }
+}
+/*!颜色和尺码*/
+.other{
+    width: 460px;
+    margin-top: 12px;
+    padding-left: 10px;
+}
+/*!颜色*/
+.other .color{
+    margin-top: 10px;
+    dt{
+        min-width: 50px;
+        color: #999;
+        width: 50px;
+        float: left;
+    }
+    .color_wrapper{
+        float: left;
+        max-width: 400px;
+        .attr_pic:nth-child(1){
+            border-color: #ff464e;
+            border-width: 1px;
+            height: 32px;
+            line-height: 30px;
+        }
+        .attr_pic{
+            background: #fff;
+            border: 1px solid #ccc;
+            float: left;
+            height: 32px;
+            line-height: 32px;
+            margin: 0 5px 10px;
+            position: relative;
+            min-width: 34px;
+        }
+        a{
+            height: 32px;
+            line-height: 30px;
+            position: relative;
+            background: #fff;
+            display: block;
+            overflow: hidden;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            white-space: nowrap;
+            cursor: pointer;
+            img{
+                width: 22px;
+                height: 22px;
+                margin-left: 8px;
+                vertical-align: middle;
+            }
+            .sku_attr_title{
+                font-size: 12px;
+                margin-left: 4px;
+                margin-right: 9px;
+                vertical-align: middle;
+            }
+        }
+        .attr_pic:nth-child(1) a .sku_attr_title{
+            color: #ff464e;
+        }
+    }
+}
+.other .color::after{
+   display: block;
+   content: '';
+   height: 0;
+   clear: both;
+}
+/*!尺码*/
+.size{
+    margin-top: 2px;
+    dt{
+        min-width: 50px;
+        color: #999;
+        width: 50px;
+        float: left;
+    }
+    .size_wrapper{
+        float: left;
+        .nos{
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid #ccc;
+            float: left;
+            height: 32px;
+            line-height: 32px;
+            margin: 0 5px 10px;
+            position: relative;
+            min-width: 34px;
+            a{
+                position: relative;
+                background: #fff;
+                display: block;
+                height: 32px;
+                line-height: 30px;
+                overflow: hidden;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                white-space: nowrap;
+                color: #333;
+                cursor: pointer;
+            }
+            .c{
+                line-height: 34px;
+                padding: 0 15px;
+                display: block;
+                min-width: 34px;
+            }
+        }
+        .nos:hover{
+            border:1px solid #333;
+        }
+    }
+}
+.size::after{
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+}
+/*!数量的加减*/
+.number{
+    margin-top: 10px;
+    padding-left: 12px;
+    dt{
+        color: #999;
+        width: 50px;
+        float: left;
+    }
+    dd{
+        float: left;
+    }
+    p{
+        background: none repeat scroll 0 0 #fff;
+        border: 1px solid #e2e2e2;
+        float: left;
+        line-height: 26px;
+        margin-right: 10px;
+        height: 28px;
+        color: #666;
+        font-weight: normal;
+        max-height: 40px;
+        overflow: hidden;
+        .decrease,.increase{            
+            float: left;
+            font: bold 18px/26px "微软雅黑";
+            height: 28px;
+            text-align: center;
+            width: 26px;
+            cursor: pointer;
+            border: 0;
+            background: #fff;
+        }
+        .decrease{
+            color: #e2e2e2;
+            cursor: default;
+
+        }
+        .c-num{
+            background: #f6f6f6;
+            font-size: 14px;
+            border-color: #e2e2e2;
+            border-style: solid;
+            border-width: 0 1px;
+            float: left;
+            height: 28px;
+            line-height: 28px;
+            padding: 0 5px;
+            text-align: center;
+            width: 40px;
+            color: #8a8a8a;
+            font-family: "Arial";
+        }
+    }
+}
+.number::after{
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+}
+/*!立即购买 加入购物车*/
+.submit-go{
+    margin: 20px 0 0 64px;
+    float: left;
+    width: auto;
+    position: relative;
+    .buy-btn{
+        text-align: center;
+        line-height: 38px;
+        background: #FFF0F0;
+        width: 154px;
+        height: 38px;
+        display: block;
+        font-size: 18px;
+        color: #ff464e;
+        font-family: "微软雅黑","宋体";
+        float: left;
+        border-radius: 2px;
+        border: 1px solid #ff464e;
+        cursor: pointer;
+    }
+    .btn{
+        background: #ff464e;
+        color: #fff;
+        border-color: transparent;
+        margin-left: 40px;
+        text-align: center;
+        line-height: 38px;
+        width: 154px;
+        height: 38px;
+        display: block;
+        font-size: 18px;
+        font-family: "微软雅黑","宋体";
+        float: left;
+        border-radius: 2px;
+        border: 1px solid #ff464e;
+        cursor: pointer;
+    }
+}
+.submit-go::after{
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+}
+
+
+
+/*!右边的商家信息*/
+.deal-store{
+    display: inline-block;
+    margin-left: 16px;
+    width: 191px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    vertical-align: top;
+    text-align: center;
+}
+/*!商家的店名*/
+.store_wrapper{
+    padding: 20px 0;
+    margin: 0 20px;
+    border-bottom: 1px dotted #ebebeb;
+    .store_img{
+        width: 48px;
+        height: 48px;
+        border: 1px solid #ebebeb;
+        margin-left: 50px;
+        line-height: 48px;
+        img{
+            width: 48px;
+            height: 24px;
+            vertical-align: middle
+        }
+    }
+    .store_name{
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+        margin-top: 16px;
+        margin-bottom: 8px;
+        a{
+            color: #5e5e5e;
+        }
+    }
+    .buy_nums{
+        font-size: 12px;
+        color: #999;
+    }
+}
+/*!商家的描述金牌认证*/
+.store_desc{
+    text-align: left;
+    padding: 20px 0;
+    margin: 0 20px;
+    border-bottom: 1px dotted #ebebeb;
+    .sale_license{
+        margin-bottom: 0;
+        a{
+            color: #5e5e5e;
+            cursor: pointer;
+        }
+        a:hover{
+            color: #ff464e;
+        }
+    }
+}
+.sale-line{
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #666;
+    img{
+        margin-right: 8px;
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+    }
+}
+/*!联系客服*/
+.to_im{
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 21px;
+    margin-bottom: 50px;
+    img{
+        margin-right: 10px;
+    } 
+    a{
+        vertical-align: middle;
+        color: #5e5e5e;
+        cursor: pointer;
+        
+    }
+    a:hover{
+        color: #ff464e;
+    }
+}
+
+/*!商品的详细介绍*/
+.goods-detail .title-nav{
+    width: 980px;
+    height: 50px;
+    .slide-box{
+        width: 100%;
+        height: 50px;
+        background: #ffffff;
+        .slide-box-main{
+            height: 50px;
+            background: #fafafa;
+            width: 980px;
+            border: 1px solid #ebebeb;
+        }
+    }
+}
+/*!商品详情规则导航*/ 
+.slide-box-main .f1{
+    float: left;
+    li{
+        float: left;
+        font-size: 14px;
+        line-height: 50px;
+        border-right: #ebebeb solid 1px;
+        background: #fafafa;
+    }
+    a{
+        padding: 0 40px;
+        height: 48px;
+        display: block;
+        float: left;
+        color: #666;
+        cursor: pointer;
+    }
+    a:hover{
+        color: #ff464e;
+    }
+    li.active a{
+        border-bottom: #ff464e solid 2px;
+        color: #ff464e;
+    }
+}
+.slide-box-main .code-item{
+    float: right;
+    position: relative;
+    z-index: 1000;
+    .show-qcode:hover{
+        color: #ff464e;
+    }
+    .show-qcode:hover i{
+        background: url(http://jp.juancdn.com/juanpi/images/shopping/code.png)
+    }
+    .show-qcode{
+        float: right;
+        width: 136px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-left: 1px solid #ebebeb;
+        font-size: 14px;
+        color: #5e5e5e;
+        .code_img{
+            width: 11px;
+            height: 11px;
+            background: url(http://jp.juancdn.com/juanpi/images/shopping/code_1.png);
+            display: inline-block;
+            margin-left: 4px;
+            font-size: 14px;
+            font-family: "微软雅黑";
+        }
+    }
+    /*!二级二维码*/
+    .codetip-box{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 146px;
+        height: 172px;
+        padding: 8px 8px 0 8px;
+        left: -4px;
+        top: 48px;
+        background-color: #fff;
+        border: #e2e2e2 solid 1px;
+        display: none;
+        .code-box{
+            float: left;
+        }
+        .code{
+            width: 142px;
+            height: 142px;
+            background: url(http://jp.juancdn.com/juanpi/images/global/jp-app-90-new.png?20160119) no-repeat;
+        }
+        .txt{
+            color: #666;
+            line-height: 23px;
+            text-align: center;
+            font-size: 14px;
+        }
+    } 
+}
+.code-item:hover .codetip-box{
+    display: block;
+}
+
+/*!滚轮滑动到详情时的固定导航*/ 
+.fixed-detailnav{
+    left: 50%;
+    position: fixed;
+    top: 0;
+    background: #f6f6f6;
+    display: none;
+    z-index: 100;
+    width: 980px !important;
+    margin-left: -600px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    .f2{
+        height: 50px;
+        line-height: 50px;
+        float: right;
+        a{
+            width: 160px;
+            height: 50px;
+            display: block;
+            float: right;
+            color: #fff;
+            background: #ff464e;
+            text-align: center;
+            font: 18px/30px "微软雅黑";
+            line-height: 50px;
+            margin: 0 0 0 15px;
+            cursor: pointer;
+        }
+        .p{
+            font-weight: normal;
+            font-size: 28px;
+            color: #ff464e;
+            margin: 0 5px 0 10px;
+            float: right;
+            text-align: right;
+        }
+        .symbols{
+            font-size: 14px;
+            font-family: "微软雅黑";
+        }
+    }
+    .code-item{
+        float: left;
+    }
+}
+
+/*!描述商品的具体图片*/ 
+.pic-goodinfo{
+    padding: 5px 40px 60px;
+    margin: 0px 0px 40px;
+    background: #fff;
+    display: inline-block;
+    width: 900px;
+}
+/*!整体款式标题*/
+.info-title{
+    height: 18px;
+    border-top: 1px solid #2a142b;
+    position: relative;
+    margin: 50px 0 30px 0;
+    .single-style{
+        background: #ffffff url(http://jp.juancdn.com/juanpi/images/items/info_bg.gif?20160113) no-repeat 0 0;
+        height: 18px;
+        width: 120px;
+        display: inline-block;
+        position: absolute;
+        top: -10px;
+        font-size: 18px;
+        text-align: center;
+        font-family: "微软雅黑";
+        line-height: 18px;
+        padding-left: 2px;
+    }
+}
+/*!整体款式图片*/
+.details-info{
+    text-align: center;
+}
+
+/*!商品的参数规格标题*/
+.tab-show-section{
+    margin-bottom: 20px;
+}
+.tab-show-section .info-title{
+    height: 18px;
+    border-top: 1px solid #2a142b;
+    position: relative;
+    margin: 50px 0 30px 0;
+    .param{
+        background: #ffffff url(http://jp.juancdn.com/juanpi/images/items/info_bg.gif?20160113) no-repeat 0 0;
+        height: 18px;
+        width: 120px;
+        display: inline-block;
+        position: absolute;
+        top: -10px;
+        font-size: 18px;
+        text-align: center;
+        font-family: "微软雅黑";
+        line-height: 18px;
+        padding-left: 2px;
+    }
+}
+/*!商品参数表格*/
+.details-info{
+    text-align: center;
+    table{
+        margin: 20px auto;
+        width: 67%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        td{
+            border: 1px solid #e2e2e2;
+            padding: 0 20px;
+            text-align: left;
+            height: 40px;
+            word-break: break-all;
+            white-space: initial;
+        }
+    }
+}
+
+/*!物流与售后*/ 
+#shouhou{
+    .info-title{
+        height: 18px;
+        border-top: 1px solid #2a142b;
+        position: relative;
+        margin: 50px 0 30px 0;
+        .buy-lines{
+            background: #ffffff url(http://jp.juancdn.com/juanpi/images/items/info_bg.gif?20160113) no-repeat 0 0;
+            height: 18px;
+            width: 120px;
+            display: inline-block;
+            position: absolute;
+            top: -10px;
+            font-size: 18px;
+            text-align: center;
+            font-family: "微软雅黑";
+            line-height: 18px;
+            padding-left: 2px;
+        }
+    }
+    .guide-con{
+        width: 816px;
+        margin: 0 auto;
+        text-align: center;
+        p{
+            text-align: left;
+            line-height: 2;
+            color: #333;
+        }
+        b{
+            font-weight: bold;
+        }
+        a{
+            color: #3399cc;
+            cursor: pointer;
+        }
+        a:hover{
+            text-decoration: underline
+        }
+    }
+    .return-process{
+        background: url(http://jp.juancdn.com/juanpi/images/items/renturn-process.jpg) no-repeat 0px 0px;
+        width: 815px;
+        height: 80px;
+        margin: 20px 0;
+    }
+    .mt10{
+        margin-top: 10px !important;
+    }
+}
+/*!消费保障*/
+#baozhang{
+    .info-title{
+        height: 18px;
+        border-top: 1px solid #2a142b;
+        position: relative;
+        margin: 50px 0 30px 0;
+        .consumer-protection{
+            background: #ffffff url(http://jp.juancdn.com/juanpi/images/items/info_bg.gif?20160113) no-repeat 0 0;
+            height: 18px;
+            width: 120px;
+            display: inline-block;
+            position: absolute;
+            top: -10px;
+            font-size: 18px;
+            text-align: center;
+            font-family: "微软雅黑";
+            line-height: 18px;
+            padding-left: 2px;
+        }
+    }
+    .details-info{
+        text-align: center;
+    }
+    .cp01{
+        width: 815px;
+        height: 156px;
+        margin: 0 auto;
+        ul{
+            margin-left: 20px;
+        }
+        li{
+            float: left;
+        }
+        span{
+            width: 70px;
+            margin: 0 20px;
+            height: 94px;
+            background: url(http://jp.juancdn.com/juanpi/images/items/xiaobao.gif?20160125) no-repeat;
+            display: block;
+            cursor: pointer;
+        }
+        .active span{
+            background-position-y: -94px;
+        }
+        .cpc01{
+            background-position: 0 0;
+        }
+        .cpc02{
+            background-position: -111px 0;
+        }
+        .cpc03{
+            background-position: -222px 0;
+        }
+        .cpc04{
+            background-position: -333px 0;
+        }
+        .cpc05{
+            background-position: -443px 0;
+        }
+        .cpc06{
+            background-position: -554px 0;
+        }
+        .cpc07{
+            background-position: -665px 0;
+        }
+    }
+    /*!消费保障对应的详情*/
+    .cp02{
+        width: 815px;
+        height: 198px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .cp-con div{
+        width: 815px;
+        height: 198px;
+        margin: 0 auto;
+    }
+    .con1{
+        background: url(http://jp.juancdn.com/juanpi/images/items/cp02_1.jpg?20160125) no-repeat 0px 0px;
+    }
+    .con2{
+        background: url(http://jp.juancdn.com/juanpi/images/items/cp02_2.jpg?20160125) no-repeat 0px 0px;
+    }
+    .con3{
+        background: url(http://jp.juancdn.com/juanpi/images/items/cp02_3.jpg?20160125) no-repeat 0px 0px;
+    }
+    .con4{
+        background: url(http://jp.juancdn.com/juanpi/images/items/cp02_4.jpg?20160125) no-repeat 0px 0px;
+    }
+    .con5{
+        background: url(http://jp.juancdn.com/juanpi/images/items/cp02_5.jpg?20160125) no-repeat 0px 0px;
+    }
+    .con6{
+        background: url(http://jp.juancdn.com/juanpi/images/items/cp02_6.jpg?20160125) no-repeat 0px 0px;
+    }
+    .con7{
+        background: url(http://jp.juancdn.com/juanpi/images/items/cp02_7.jpg?20160125) no-repeat 0px 0px;
+    }
+}
+
+/*!侧边的专场其他商品*/
+.other-goods{
+    display: inline-block;
+    width: 191px;
+    vertical-align: top;
+    margin-top: -51px;
+    margin-left: 20px;
+}
+#other-goodslist{
+    border: 1px solid #ebebeb;
+    border-top: none;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    .title-other{
+        height: 50px;
+        line-height: 50px;
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        background: #fafafa;
+    }
+    .other-goods-item{
+        padding: 18px 16px 0 16px;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+        color: #5e5e5e;
+        img{
+            width: 50px;
+            height: 50px;
+            vertical-align: top;
+        }
+    }
+    .other-goods-desc{
+        display: inline-block;
+        width: 94px;
+        line-height: 24px;
+        margin-left: 8px;
+        vertical-align: middle;
+        .other-goods-name{
+            max-height: 32px;
+            overflow-y: hidden;
+            line-height: 16px;
+            font-size: 12px;
+            color: #333;
+            word-wrap: break-word;
+        }
+        .other-new-cprice{
+            color: #ff464e;
+            font-size: 14px;
+            font-family: "微软雅黑","verdana";
+        }
+        .other-new-oprice{
+            color: #bbb;
+            font-size: 12px;
+            text-decoration: line-through;
+            margin-left: 4px;
+            font-family: "微软雅黑","verdana";
+        }
+    }
+}
+#recommond-goods-list{
+    border: 1px solid #ebebeb;
+    border-top: none;
+    padding-bottom: 18px;
+}

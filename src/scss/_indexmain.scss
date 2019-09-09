@@ -1,0 +1,214 @@
+/*!滑倒main时的从上到下的导航栏*/
+.fixed-topnav{
+    position: fixed;
+    left: 0;
+    top: -50px;
+    background-color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 1000;
+    ul{
+        width: 1200px;
+        margin: 0 auto;
+        height: 20px;
+        line-height: 20px;
+    }
+    li{
+        float: left;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 15px;
+        a{
+            display: block;
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+    li.first{
+        border-right: 1px solid #ccc;
+        padding-left: 0;
+    }
+    li.first a,li a:hover{
+        color: #ff464e;
+    }
+    li.last a{
+        color: #336600;
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+}
+
+/*!每日上新和渲染列表*/
+.main{
+    overflow: hidden;
+    width: 1200px;
+    margin: 30px auto 0px auto;
+    background: #fff;
+}
+/*！每日上新*/ 
+.main .today-brand{
+    box-sizing: border-box;
+    line-height: 60px;
+    padding: 0 16px;
+    overflow: hidden;
+    .today-word{
+        margin-left: 4px;
+        font-family: "微软雅黑","宋体";
+        height: 62px;
+        float: left;
+        font-size: 20px;
+        color: #333;
+        font-weight: bold;
+        .today-words{
+            margin-right: 10px;
+            font-weight: normal;
+            font-size: 16px;
+            color: #bbb;
+            margin-left: 10px;
+        }
+    }
+    .day-updata{
+        float: right;
+        margin-right: 2px;
+    }
+}
+/*!渲染的列表主体结构*/
+.goods-list{
+    width: 1200px;
+    padding-left: 14px;
+    box-sizing: border-box;
+    margin: 0px auto 0;
+    overflow: hidden;
+    li{
+        position: relative;
+        width: 230px;
+        background: #FFF;
+        float: left;
+        margin: 0 6px 12px 0;
+        height: 290px;
+        box-sizing: border-box;
+        padding-top: 6px;
+        border: 1px solid transparent;
+    }
+    li:hover{
+        border: 1px solid #eee;
+    }
+    li:hover #love-code{
+        display: block;
+    }
+    .good-pic{
+        width: 220px;
+        position: relative;
+        height: 220px;
+        padding-left: 4px;
+        cursor: pointer;
+        a{
+            display: block;
+            height: 220px;
+            width: 220px;
+        }
+        img{
+            max-width: 220px;
+            max-height: 220px;
+        }
+    }
+}
+/*!商品的价格*/
+.goods-list .good-price{
+    width: 220px;
+    height: 32px;
+    line-height: 36px;
+    position: relative;
+    padding: 0 10px 0px 8px;
+    background: #fff;
+    z-index: 10;
+    box-sizing: border-box;
+    float: left;
+    .current-price{
+        color: #ff464e;
+        font-size: 18px;
+        font-family: Arial;
+        i{
+            font-size: 18px;
+            font-family: "微软雅黑","verdana";
+            margin-left: -1px;
+            margin-right: -1px;
+        }
+    }
+    .old-price{
+        margin: 2px 0 0 5px;
+        color: #bbb;
+        text-decoration: line-through;
+        font-size: 14px;
+        i{
+            font-family: "微软雅黑","verdana";
+            font-size: 12px;
+        }
+    }
+}
+/*!商品的标题*/
+.goods-list h3{
+    width: 220px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 0 10px 0 10px;
+    position: relative;
+    font-weight: normal;
+    color: #333;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    letter-spacing: 0;
+    a{
+        display: inline-block;
+        color: #333;
+        letter-spacing: 1px;
+        max-width: 160px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    span{
+        display: block;
+        color: #bbb;
+        position: absolute;
+        top: 0;
+        right: 6px;
+        background: #fff;
+        height: 18px;
+        text-align: right;
+    }
+}
+/*!悬停的收藏小爱心*/
+.goods-list #love-code{
+    display: none;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #f4f4f4;
+    background: #f4f4f4;
+    border-radius: 15px;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+    z-index: 15;
+    i{
+        background-position: 0 0;
+        margin-top: -5px;
+        margin-left: -7px;
+        width: 14px;
+        height: 11px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: url(http://jp.juancdn.com/juanpi/images/list/my-like.png?20160115) no-repeat;
+    }
+}
+.goods-list #love-code:hover i{
+    background-position: 0 -72px;
+}

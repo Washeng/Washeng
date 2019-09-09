@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+    <div class="login">
+        <!-- 顶部 -->
+        <div class="header">
+            <div class="wra">
+                <div class="logo"><a href="index.html" target="_blank"></a></div>
+                <div class="protect"><a href=""></a></div>
+            </div>
+        </div>
+        <!-- 主体页面 -->
+        <div class="main">
+            <div class="login-main">
+                <!-- 登录的表格 -->
+                <div class="login-content">
+                    <!-- 顶部开头 -->
+                    <div class="title">
+                        <span class="hd">老用户登录</span>
+                        <span class="tips">尊敬的卷皮用户，欢迎您回来！</span>
+                        <p class="other">还没账号？<a href="register.html" target="_blank">立即去注册</a></p>
+                    </div>
+                    <!-- 下方表单和图片 -->
+                    <div class="form-box">
+                        <!-- 表单 -->
+                        <div class="form">
+                            <form action="" class="lo-fo">
+                                <ul class="login_list">
+                                    <!-- 手机号 邮箱 -->
+                                    <li class="active">
+                                        <!--中间的输入框 -->
+                                        <div class="box_border">
+                                            <div class="user_img"></div>
+                                            <input type="text" id="account" class="normal-input" placeholder="手机号/邮箱/昵称" name="account" value="">
+                                        </div>
+                                        <!-- 报错的框 -->
+                                        <div class="error-box" id="account_warn">
+                                            <p class="tshi">请输入手机号码</p>
+                                        </div>
+                                    </li>
+                                    <!-- 密码 -->
+                                    <li class="clear">
+                                        <div class="box_border">
+                                            <div class="code_img"></div>
+                                            <input type="password" class="normal-input" placeholder="密码" name="password">
+                                        </div>
+                                        <div class="error-box" id="password_warn">
+                                            <p class="tshi">请输入手机号码</p>
+                                        </div>
+                                    </li>
+                                    <!-- 验证码 -->
+                                    <li id="verify_display">
+                                        <input type="text" class="normal-input" placeholder="验证码" name="code">
+                                        <div class="fication-code">
+                                            <span class="yan">WQFE</span>
+                                            <span class="change_yan">换一批</span>
+                                        <div class="error-box" id="code_warn">
+                                            <p class="tshi">请输入手机号码</p>
+                                        </div>
+                                    </li>
+                                    <!-- 勾选两种内免登录 -->
+                                    <li class="chex-d">
+                                        <div class="chex">
+                                            <span><label><input type="checkbox" class="ck" name="auto" checked="checked">两周内免登录</label></span>
+                                            <a class="forget " href="">忘记密码？</a>
+                                        </div>
+                                    </li>
+                                    <!-- 登录 -->
+                                    <li>
+                                        <div class="btn">
+                                            <div class="sub">登录</div>
+                                        </div>
+                                    </li>
+                                    <!-- 合作网站的登录 -->
+                                    <li class="thlogin">
+                                        <div class="union">
+                                            <p class="utitle"><span>合作网站账号登录</span></p>
+                                            <div class="thbox">
+                                                <a href="" class="weixin"></a>
+                                                <a class="sina" href=""></a>
+                                                <a href="" class="taobao"></a>
+                                            </div>
+                                        </div>
+                                        <a href="" class="quick"><em class="icons"></em><span class="fl">手机快捷登录&gt;&gt;</span></a>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <!-- 右侧图片 -->
+                        <div class="login-pic">
+                            <img src="https://jp.juancdn.com/user/images/login/login-bj-ad.png?ts=20181022174388-1&sv=449ce9ee" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 公司 许可证 -->
+                <p class="foot-t">武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 | <a href="">鄂公网安备42018502000390号</a> | 食品流通许可证 SP4201991510041888</p>
+                <!-- 最下面的 -->
+                <p class="fot-bot">Copyright © 2010 - 2019 JuanPi.com All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
