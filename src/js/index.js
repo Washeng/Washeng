@@ -112,7 +112,7 @@ $(document).ready(function(){
         updata(){
             let $goodsul=$('.main .goods-list ul');
             $.ajax({
-                url: 'http://10.31.157.39:8088/js/Project2/php/',
+                url: 'http://10.31.157.39:8088/process2/Project2/php/',
                 dataType: 'json'
             }).done(function (data) {
                 // console.log(data)

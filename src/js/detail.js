@@ -94,7 +94,7 @@ $(document).ready(function(){
             let $bpic=$('.detailpic-box .pic img');//大图
             let $sid = location.search.substring(1).split('=')[1];
             $.ajax({
-                url: 'http://10.31.157.39:8088/js/Project2/php/detailgetdata.php',
+                url: 'http://10.31.157.39:8088/process2/Project2/php/detailgetdata.php',
                 dataType: 'json',
                 data:{
                     sid:$sid

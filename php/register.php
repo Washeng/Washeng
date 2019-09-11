@@ -11,5 +11,5 @@ if(isset($_POST['submit'])){
     // $conn->query("insert usertable values(null,'$name','$pass','$email',NOW())");
 
     //php的跳转
-    header('location:http://10.31.157.39:8088/js/Project2/dist/html/login.html');
+    header('location:http://10.31.157.39:8088/process2/Project2/dist/html/');
 }

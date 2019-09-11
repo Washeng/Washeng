@@ -42,7 +42,7 @@ $(document).ready(function(){
         ajax(id,num){
             let _this=this
             $.ajax({
-                url: "http://10.31.157.39:8088/js/Project2/php/index.php",
+                url: "http://10.31.157.39:8088/process2/Project2/php/index.php",
                 dataType: "json",
                 success: function (data) {
                     console.log(data)

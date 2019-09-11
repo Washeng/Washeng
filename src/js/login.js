@@ -161,7 +161,7 @@ $(document).ready(function(){
                 }else{
                     $.ajax({
                         type: "post",
-                        url: "http://10.31.157.39:8088/js/Project2/php/login.php",
+                        url: "http://10.31.157.39:8088/process2/Project2/php/login.php",
                         data: {
                             $tel:$('.box_border #account').val(),
                             $password:$('.clear .normal-input').val()
@@ -170,7 +170,7 @@ $(document).ready(function(){
                             if(!data){
                                 alert('用户名和密码错误');
                             }else{
-                                location.href='http://10.31.157.39:8088/js/Project2/dist/html/index.html';
+                                location.href='http://10.31.157.39:8088/process2/Project2/dist/html/index.html';
                                 localStorage.setItem('customname',$('.box_border #account').val());
                             }
                         }
